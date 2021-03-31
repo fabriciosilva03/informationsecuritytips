@@ -46,6 +46,29 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 ##### nano /etc/sudoers : Alterando tais configurações você pode dar permições de root a um usuário especifico.
 
 
+##### __________________________________________________
+
+##### GERENCIAMENTO DE REDES:
+
+##### __________________________________________________
+
+##### ifconfig : Exibe informações sobre as configurações da sua rede.
+##### ifconfig eth0 x.x.x.x netmask x.x.x.x : Alterando ip e mascara de sub rede, temporariamente, pois ao reinciar a maquina as configurações padrões se reestabelecem.
+##### nano /etc/network/interfaces : Alterando as configurações deste arquivo pode ficar de forma permanete as alterações de IP e Mascara de sub rede.
+##### route : Mostra a tabela de roteamento.
+##### route add del default : Remove a rota predefinida.
+##### route add default gw x.x.x.x : Adiciona uma nova rota.
+##### netstat -lt : Lista conexoes abertas via TCP.
+##### netstat -lnt : Lista conexoes abertas via TCP e a porta utilizada.
+##### netstat -lntp : Lista conexoes abertas via TCP e a porta utilizada e o nome do programa.
+##### netstat -lu : Lista conexoes abertas via UDP.
+
+##### __________________________________________________
+
+##### EDITOR DE TEXTO:
+
+##### __________________________________________________
+
 
 
 
