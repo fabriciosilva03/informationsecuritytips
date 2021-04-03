@@ -20,7 +20,7 @@ touch {nomedoarquivo} : Comando utilizado para criar um arquivo.
 
 touch .arquivo  : Comando para criar um arquivo oculto.
 
-> {nomedoarquivo}  : Comando utilizado para criar um arquivo.
+ > {nomedoarquivo}  : Comando utilizado para criar um arquivo.
  
 ls  : Lista arquivos contidos no diretorio atual.
 
