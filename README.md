@@ -152,6 +152,27 @@ find / -name {nomedoarquivo} : comando de busca em todos os  diretorios do siste
 
 ##### __________________________________________________
 
+**GREP** 
+
+##### Buscando por linhas que contenham um trecho de especifico:
+
+Ex: cat /dir/arquivo | grep "termpobuscado"
+
+Ex2: grep "termpobuscado" /dir/arquivo 
+
+##### Buscando por linhas que contenham um trecho de especifico e armazenando dentro de um arquivo.
+
+Ex2: grep "termpobuscado" /dir/arquivo > arquivo2
+
+##### Buscando por linhas que não contenham um trecho de especifico:
+
+Ex2: grep -v "termpobuscado" /dir/arquivo
+
+
+**EGREP**
+##### Buscando por linhas que não contenham um mais de um trecho de especifico:
+
+Ex2: grep -v "termpobuscado|termpobuscado2" /dir/arquivo
 
 
 
