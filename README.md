@@ -69,8 +69,23 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 ##### __________________________________________________
 
+nano {nomearquivo} : Criar e abre o arquivo para ser editado via editor nano.
+Exemplo de atalho no editor nano:
+Ctrl + x : Exit
 
+vi {nomearquivo} : Abre arquivo para ser editado via editor vi.
 
+Exemplo de buscar algo no vi:
+Esc 
+/nomebuscado.
+
+Exemplos de comandos Vi:
+Esc
+:q  : Sair do editor
+:q! : Força a sair sem salvar
+:wq : Salva o arquivo e sai do editor.
+
+leafpad : Editor de texto simples em modo gráfico.
 
 
 
