@@ -116,6 +116,46 @@ dpkg -l : lista pacotes dpkg instalados no sistema.
 
 ##### __________________________________________________
 
+service {serviço} start : iniciando o serviço.
+
+service {serviço} stop : Parando o serviço.
+
+service {serviço} restart : Reiniciando o serviço.
+
+update-rc.d {serviço} enable : Comando para fixar um serviço, ou seja mesmo que a maquina seja reiniciada o serviço ira inciar de forma automática.
+
+update-rc.d {serviço} disable : Comando para desabilitar a incialização de serviços extras ao inciar a maquina.
+
+reboot : reinciar o sistema
+
+poweroff : comando para desligar o sistema.
+
+##### __________________________________________________
+
+##### ARQUIVOS:
+
+##### __________________________________________________
+
+locate {arquivo} : comando para localizar o arquivo.
+
+updatedb : comando para atulizar os dados do sistema e o comando locate buscar arquivos criados recentemente.
+
+whereis {aplicação} : Buscando aplicações no sistema. Ex: whereis {nmap}
+
+find /caminho/ -name {nomedoarquivo} : comando de busca por diretorio especifico e por nome do arquivo. Ex: find /home/ -name artigo.doc
+
+find / -name {nomedoarquivo} : comando de busca em todos os  diretorios do sistema.
+
+##### __________________________________________________
+
+##### GANHANDO TEMPO:
+
+##### __________________________________________________
+
+
+
+
+
 
 
 
