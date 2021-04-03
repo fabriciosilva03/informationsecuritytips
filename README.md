@@ -94,12 +94,19 @@ leafpad : Editor de texto simples em modo gráfico.
 ##### __________________________________________________
 
 /etc/apt/sources.list : Este arquivo contem a lista de repositorios de download de pacotes do sitema.
+
 apt update : Comando para atualizar o sistema.
+
 apt upgrade : Instala as atualizações baixadas.
+
 apt search {pacote} : busca por algumas aplicação disponivel no meu repositorio.
+
 apt install {pacote} : instala aplicação no meu sistema.
+
 apt remove {pacote} : removendo pacote.
+
 dpkg -i {arquivo.deb} : comando para instalar pacotes .deb
+
 dpkg -l : lista pacotes dpkg instalados no sistema.
 
 
