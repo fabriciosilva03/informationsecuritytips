@@ -235,6 +235,18 @@ Ex: cut -d : -f1-6 arquivo
 Ex: sed 's/palavrax/palavray/' arquivo
 
 
+##### __________________________________________________
+
+##### TOOLS KALI:
+
+##### __________________________________________________
+
+**Quebrar senhas:**
+
+hashcat -m0 hash.txt passlist.txt
+
+john --format=raw-md5 "Nome do arquivo que contém a hash ou as hashes" --wordlist="Diretório onde a sua lista com possíveis senhas está".
+
 
 
 
