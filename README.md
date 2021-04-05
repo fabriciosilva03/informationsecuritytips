@@ -248,6 +248,7 @@ hashcat -m0 hash.txt passlist.txt
 john --format=raw-md5 "Nome do arquivo que contém a hash ou as hashes" --wordlist="Diretório onde a sua lista com possíveis senhas está".
 
 **Web shell**
+
 weevely generate {senhadeacesso} {nomedabackdoor.extesão}
 
 
