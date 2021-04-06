@@ -251,7 +251,69 @@ john --format=raw-md5 "Nome do arquivo que contém a hash ou as hashes" --wordli
 
 weevely generate {senhadeacesso} {nomedabackdoor.extesão}
 
+**Convertendo dados hexadecimais**
 
+Ex:
+
+printf "%d\n" 0x....
+
+Ex2:
+
+printf "%d.%d.%d.%d\n" 0x.. 0x... 0x... 0x...
+
+**Listando os codigos de cada tipo de protocolo**
+
+cat /etc/protocols
+
+**Manual da tabela ascii**
+
+man ascii
+
+**Convertendo dados da tabela ascii**
+
+Ex:
+
+printf "\x..\x..\x..\x..\x..\x..\n" 
+
+
+**TCPDUMP:**
+
+**Capturando trafego**
+
+tcpdump -vnw {arquivo}.pcap
+
+**Leitura do trafego capturado.**
+
+tcpdump -vnr {arquivo}.pcap
+
+**Leitura filtrada por porta:**
+
+tcpdump -vnr {arquivo}.pcap port 21
+
+
+**O COMANDO WC**
+
+Este comando é utilizado para contar caracteres, palavras e/ou linhas dos dados da entrada padrão e apresenta o resultado na saída padrão.
+
+-l: conta as linhas;
+
+-w: conta as palavras;
+
+-c: conta os caracteres.
+
+Exemplos:
+
+**wc -l texto.txt**
+
+26 texto.txt
+
+**wc -w texto.txt**
+
+14 texto.txt
+
+**wc texto.txt**
+
+2346   282   26
 
 
 
