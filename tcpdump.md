@@ -1,4 +1,4 @@
-TCPDUMP:
+**TCPDUMP:**
 
 Capturando trafego
 
@@ -11,8 +11,8 @@ tcpdump -vnr {arquivo}.pcap
 Leitura filtrada por porta:
 
 tcpdump -vnr {arquivo}.pcap port 21
-
-
-Referẽncias:
+.
+.
+**Referẽncias:**
 
 https://packetbomb.com/command-line-using-tcpdump-to-find-scanning-activity/
