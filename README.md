@@ -7,7 +7,7 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 :mosquito:	**VULNERABILIDADES:**
 
-<a href="#">LFI</a>
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/localfileinclusion.md">LFI</a>
 
 :hammer_and_wrench: **TOOLS**
 
