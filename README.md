@@ -1,8 +1,9 @@
 # informationsecuritytips
 Este repositório contem dicas de segurança da informação, que foram coletadas durante meus estudos!
 
-**GUIA DE ESTUDOS**
-<a href="#"> Guia de Estudos</a>
+:compass:	**GUIA DE ESTUDOS**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/guiadeestudos.md"> Guia de Estudos</a>
 
 :books:	 **LEITURA:**
 
