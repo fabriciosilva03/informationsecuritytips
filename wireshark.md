@@ -61,3 +61,7 @@ http.request.method == “POST” && http.host==”192.168.10.11″ && http.requ
 Display Filter Reference: Hypertext Transfer Protocol
 
 https://www.wireshark.org/docs/dfref/h/http.html
+
+Reconstruindo arquivos de pacotes Wireshark
+
+https://shankaraman.wordpress.com/tag/how-to-extract-ftp-files-from-wireshark-packet/
