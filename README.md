@@ -9,6 +9,8 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/Articles.md"> Artigos </a>
 
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/write-ups.md"> Write-Ups </a>
+
 :mosquito:	**VULNERABILIDADES:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/localfileinclusion.md">LFI</a>
