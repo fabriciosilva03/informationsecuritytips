@@ -5,7 +5,7 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/guiadeestudos.md"> Guia de Estudos</a>
 
-:cd:	 **Virtual Machines | ISOs**
+:cd:	 **VIRTUAL MACHINES | ISOs**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/virtualmachines.md">Virtual Machines</a>
 
