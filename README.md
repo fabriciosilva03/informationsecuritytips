@@ -20,6 +20,10 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/localfileinclusion.md">LFI</a>
 
+:computer: **SCRIPTS**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/scripts.md">Scripts</a>
+
 :hammer_and_wrench: **TOOLS**
 
 **Conversores:**
