@@ -1,4 +1,4 @@
-**BASH SCRIPTING - LINUX**
+## BASH SCRIPTING - LINUX
 
 PortScan: 
 
@@ -49,7 +49,7 @@ fi
 
 ```
 
-**POWER SHELL**
+## POWER SHELL
 
 PortScan
 
@@ -85,7 +85,7 @@ $web2 = Invoke-WebRequest -uri "http://www.businesscorp.com.br"
 $web2.links.href | Select-String http://
 ```
 
-**LINGUAGEM C**
+## LINGUAGEM C
 
 PortScan
 ```
@@ -153,7 +153,7 @@ int main(int argc, char *argv[]){
 ```
 
 
-**PYTHON**
+## PYTHON
 
 PortScan:
 ```
