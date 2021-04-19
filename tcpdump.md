@@ -2,15 +2,15 @@
 
 Capturando trafego
 
-tcpdump -vnw {arquivo}.pcap
+```tcpdump -vnw {arquivo}.pcap```
 
 Leitura do trafego capturado.
 
-tcpdump -vnr {arquivo}.pcap
+```tcpdump -vnr {arquivo}.pcap```
 
 Leitura filtrada por porta:
 
-tcpdump -vnr {arquivo}.pcap port 21
+```tcpdump -vnr {arquivo}.pcap port 21```
 
 
 **Referẽncias:**
