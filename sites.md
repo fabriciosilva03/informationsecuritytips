@@ -49,6 +49,12 @@ Google Dork:
 
 ``` cache:site.com.br/file.txt ```  (Exemplo de cache amarzenado pelo goolge caso a pagina ja havia sido indexada e depois foi removida.)
 
+Google Hacking Database
+
 https://www.exploit-db.com/google-hacking-database
+
+TheHarvester
+
+https://tools.kali.org/information-gathering/theharvester
 
 
