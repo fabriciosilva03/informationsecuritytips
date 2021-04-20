@@ -28,3 +28,7 @@ https://github.com/limkokhole/karma
 Pastebin
 https://pastebin.com/
 
+Google Dork:
+site:"pastebin.com" "site.com.br"
+site:"trello.com" ".com.br" ftp
+
