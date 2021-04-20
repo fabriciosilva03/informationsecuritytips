@@ -24,3 +24,7 @@ http://pwndb2am4tzkvold.onion/
 API pwndb - Demo:
 
 https://github.com/limkokhole/karma
+
+Pastebin
+https://pastebin.com/
+
