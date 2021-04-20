@@ -48,4 +48,8 @@ TheHarvester
 
 https://tools.kali.org/information-gathering/theharvester
 
+Exiftool
+
+https://exiftool.org/install.html
+
 
