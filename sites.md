@@ -32,3 +32,11 @@ Google Dork:
 site:"pastebin.com" "site.com.br"
 site:"trello.com" ".com.br" ftp
 
+Urlcrazy
+
+https://tools.kali.org/information-gathering/urlcrazy
+
+Web Archive
+
+https://web.archive.org/
+
