@@ -43,9 +43,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/redes.md"> Redes </a>
 
-**Sites:**
+**Information Gathering:**
 
-<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/sites.md"> Sites </a>
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/informationgathering.md"> Information Gathering: </a>
 
 
 
