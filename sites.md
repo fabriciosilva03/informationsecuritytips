@@ -23,4 +23,4 @@ http://pwndb2am4tzkvold.onion/
 
 API pwndb - Demo:
 
-https://github.com/jdiazmx/karma
+https://github.com/limkokhole/karma
