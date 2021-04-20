@@ -26,6 +26,10 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 :hammer_and_wrench: **TOOLS**
 
+**Canivete Suiço:**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/swissarmyknife.md"> Swiss Army Knife </a>
+
 **Conversores:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/conversores.md"> Conversores </a>
