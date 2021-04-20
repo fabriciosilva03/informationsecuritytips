@@ -20,3 +20,7 @@ https://haveibeenpwned.com/
 Base na dark web
 
 http://pwndb2am4tzkvold.onion/
+
+API pwndb - Demo:
+
+https://github.com/jdiazmx/karma
