@@ -49,6 +49,28 @@ fi
 
 ```
 
+Scanner files
+
+```
+if ["1$" == ""]
+        then
+		#Realize busca por pdf dentro de sites de forma automatizada.
+
+                echo "Digite o argumento de forma correta:"
+		echo "Exemplo:"
+		echo "./script site.com"
+	else
+		lynx --dump "https://google.com/search?&q=site:$1+ext:pdf" | grep ".pdf" | cut -d "=" -f2 | egrep -v "site|google" | sed 's/...$//' > resbusca
+
+		for url in $(cat resbusca);do wget -q $url;done
+
+		exiftool *.pdf
+
+		rm -rf *.pdf
+
+fi
+```
+
 ## POWER SHELL
 
 PortScan
