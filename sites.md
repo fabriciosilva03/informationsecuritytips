@@ -39,15 +39,15 @@ https://web.archive.org/
 
 Google Dork:
 
-site:"pastebin.com" "site.com.br"
+``` site:"pastebin.com" "site.com.br" ```
 
-site:"trello.com" ".com.br" ftp
+``` site:"trello.com" ".com.br" ftp ```
 
-:.com.br filetype:xls senhas
+``` :.com.br filetype:xls senhas ```
 
-filetype:txt inurl:senhas
+``` filetype:txt inurl:senhas ```
 
-cache:site.com.br/file.txt  (Exemplo de cache amarzenado pelo goolge caso a pagina ja havia sido indexada e depois foi removida.)
+``` cache:site.com.br/file.txt ```  (Exemplo de cache amarzenado pelo goolge caso a pagina ja havia sido indexada e depois foi removida.)
 
 https://www.exploit-db.com/google-hacking-database
 
