@@ -41,6 +41,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/wireshark.md"> Wireshark </a>
 
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/redes.md"> Redes </a>
+
+
 
 ## **Terminal Linux**
 
