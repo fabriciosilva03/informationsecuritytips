@@ -71,6 +71,23 @@ if ["1$" == ""]
 fi
 ```
 
+Script de transferência de zone
+
+```
+#!/bin/bash
+
+#Script para transferencia de zona
+
+# Forma de uso:
+# ./script site.com.br
+
+for server in $(host -t ns $1 | cut -d " " -f 4);
+do
+host -l -a $1 $server
+done
+```
+
+
 ## POWER SHELL
 
 PortScan
