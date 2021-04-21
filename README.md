@@ -45,7 +45,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 **Information Gathering:**
 
-<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/informationgathering.md"> Information Gathering </a>
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-business.md"> Information Gathering Business</a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-infra.md"> Information Gathering INFRA</a>
 
 
 
