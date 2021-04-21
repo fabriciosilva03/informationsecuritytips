@@ -29,9 +29,24 @@ https://client.rdap.org/
 Comando via terminal:
 
 ``` host site.com.br ```
-Arin
+
+Arin 
 
 https://search.arin.net/rdap/
+
+Comando via terminal, para obter o bloco de IP:
+
+``` whois 192.168.0.1 | grep "inetnum" ```
+
+**BGP**
+
+https://bgpview.io/
+
+https://bgp.he.net/
+
+
+
+
 
 
 
