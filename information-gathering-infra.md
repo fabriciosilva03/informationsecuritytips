@@ -69,6 +69,24 @@ Exemplo de filtro:
 ```location.country_code:BR AND metadata.os:Ubunto AND ports:3306```
 
 
+**DNS - Domain Name System**
+
+Pesquisando resoluções de DNS via terminal:
+
+```host -t A site.com.br ```
+
+``` host -t mx site.com.br ```
+
+``` host -t ns site.com.br ```
+
+``` host -t hinfo site.com.br ```
+
+``` host -t aaaa site.com.br ```
+
+``` host -t txt site.com.br ```
+
+``` host mail.site.com.br ```
+
 
 
 
