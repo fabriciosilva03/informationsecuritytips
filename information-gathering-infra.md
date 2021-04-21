@@ -73,7 +73,7 @@ Exemplo de filtro:
 
 Pesquisando resoluções de DNS via terminal:
 
-```host -t A site.com.br ```
+``` host -t A site.com.br ```
 
 ``` host -t mx site.com.br ```
 
@@ -86,6 +86,22 @@ Pesquisando resoluções de DNS via terminal:
 ``` host -t txt site.com.br ```
 
 ``` host mail.site.com.br ```
+
+
+Script para Zone Transfer
+
+``` host -t -ns site.com.br ```
+
+``` host -l site.com.br ns2.site.com.br ```
+
+``` host -l -a site.com.br ns2.site.com.br ```
+
+```for server in $(host -t ns site.com.br | cut -d " " -f4);do host -l -a site.com.br $server;done ```
+
+
+
+
+
 
 
 
