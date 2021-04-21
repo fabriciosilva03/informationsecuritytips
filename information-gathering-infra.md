@@ -44,6 +44,22 @@ https://bgpview.io/
 
 https://bgp.he.net/
 
+**SHODAN**
+
+https://www.shodan.io/
+
+Shodan no linux:
+
+```pip install shodan```
+
+```shodan init API```
+
+``` shodan country:br port:445 ``` Exemplo de busca no shodan via terminal.
+
+
+
+
+
 
 
 
