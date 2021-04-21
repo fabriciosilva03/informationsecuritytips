@@ -54,9 +54,19 @@ Shodan no linux:
 
 ```shodan init API```
 
-``` shodan country:br port:445 ``` Exemplo de busca no shodan via terminal.
+Exemplos de busca no shodan via terminal:
 
+``` shodan country:br port:445 ``` 
 
+``` shodan host 192.168.0.1 ``` 
+
+**CENSYS**
+
+https://censys.io/
+
+Exemplo de filtro:
+
+```location.country_code:BR AND metadata.os:Ubunto AND ports:3306```
 
 
 
