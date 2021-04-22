@@ -108,7 +108,7 @@ Pesquisa reversa (DNS):
 
 Analisando SPF
 
-sem spf: suscetível a ataque.    |    ?all: suscetível (neutro)  |   ~all: suscetível (* é tratado como suspeito*)    |   -all: protegido
+sem spf: suscetível a ataque.    -   ?all: suscetível (neutro)  -   ~all: suscetível (* é tratado como suspeito*)    -   -all: protegido
 
 ```host -t txt site.com.br```
 
@@ -116,6 +116,11 @@ sem spf: suscetível a ataque.    |    ?all: suscetível (neutro)  |   ~all: sus
 Ex de site para enviar e-mail spoofing
 
 https://emkei.cz/
+
+
+Entendendo o Subdomain Takeover
+
+```host -t cname doc.site.com.br ```
 
 
 
