@@ -140,6 +140,13 @@ DNSRECON
 
 `dnsrecon -d site.com.br`
 
+**Serviços para pesquisa passiva**
+
+https://www.virustotal.com/gui/
+
+https://dnsdumpster.com/
+
+https://securitytrails.com/#search
 
 
 
