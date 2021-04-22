@@ -87,6 +87,20 @@ host -l -a $1 $server
 done
 ```
 
+Script para Pesquisa Reversa (DNS)
+```
+#!/bin/bash
+
+#Script para pesquisa reversa de DNS
+
+#Forma de uso
+#./script 192.168.0
+
+for ip in $(seq 224 239);do
+host -t ptr $1.$ip | grep -v "$1" | cut -d " " -f 5
+done
+```
+
 
 ## POWER SHELL
 
