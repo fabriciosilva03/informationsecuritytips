@@ -149,4 +149,13 @@ https://dnsdumpster.com/
 https://securitytrails.com/#search
 
 
+Coleta através de certificados digitais
+
+https://transparencyreport.google.com/https/certificates
+
+https://crt.sh/
+
+
+
+
 
