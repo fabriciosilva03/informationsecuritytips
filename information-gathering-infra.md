@@ -106,8 +106,16 @@ Pesquisa reversa (DNS):
 
 ```for ip in $(seq 224 239);do host 192.168.0.$ip;done```
 
+Analisando SPF
+
+sem spf: suscetível a ataque.    |    ?all: suscetível (neutro)  |   ~all: suscetível (* é tratado como suspeito*)    |   -all: protegido
+
+```host -t txt site.com.br```
 
 
+Ex de site para enviar e-mail spoofing
+
+https://emkei.cz/
 
 
 
