@@ -122,6 +122,11 @@ Entendendo o Subdomain Takeover
 
 ```host -t cname doc.site.com.br ```
 
+Outras Ferramentas para DNS
+
+`dig -t ns site.com.br +short`
+
+
 
 
 
