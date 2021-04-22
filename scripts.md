@@ -101,6 +101,21 @@ host -t ptr $1.$ip | grep -v "$1" | cut -d " " -f 5
 done
 ```
 
+script para subdomain takeover
+
+```
+#!/bin/bash
+
+#Script para para subdomain takeover
+
+#Forma de uso
+#./script site.com.br
+
+for palavra in $(cat lista.txt);do
+host -t cname $palavra.$1 | grep "alias for"
+done
+```
+
 
 ## POWER SHELL
 
