@@ -124,20 +124,21 @@ Entendendo o Subdomain Takeover
 
 Outras Ferramentas para DNS
 
+listando ferramentas de dns
+
+`cd /usr/share/dns`
+
+DIG
+
 `dig -t ns site.com.br +short`
 
+DNSENUM
 
+`dnsenum --enum site.com.br`
 
+DNSRECON 
 
-
-
-
-
-
-
-
-
-
+`dnsrecon -d site.com.br`
 
 
 
