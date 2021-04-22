@@ -98,6 +98,18 @@ Script para Zone Transfer
 
 ```for server in $(host -t ns site.com.br | cut -d " " -f4);do host -l -a site.com.br $server;done ```
 
+Script de busca direta de DNS:
+
+```for palavra in $(cat lista.txt);do host $palavra.site.com.br;done```
+
+Pesquisa reversa (DNS):
+
+```for ip in $(seq 224 239);do host 192.168.0.$ip;done```
+
+
+
+
+
 
 
 
