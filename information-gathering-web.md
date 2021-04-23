@@ -44,6 +44,11 @@ Mudando o user agent: `curl -v -H "User-Agent: xxxx" site.com.br`
 
 `whatweb site.com.br`
 
+**Wappalyzer**
+
+- Extensão para o browser para indentificar as tecnologias utilizadas no site.
+
+
 
 
 
