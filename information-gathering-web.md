@@ -1,22 +1,22 @@
 ## Web Recon
 
-**Robots e Sitemap
+**Robots e Sitemap**
 
 Exemplo de busca por robots.txt utilizando o google dork - `site:.com.br ext:txt robost`
 
-**Listagem de Diretórios
+**Listagem de Diretórios**
 
 index of  -  \css   -   \admin
 
-**Mirror Website
+**Mirror Website**
 
 `wget -m site.com.br`
 
 `wget -m -e robots=off site.com.br`
 
-**Análise de erros, códigos e extensões
+**Análise de erros, códigos e extensões**
 
-**Pesquisa via requisições HTTP
+**Pesquisa via requisições HTTP**
 
 ` nc -v site.com.br 80 `
 
@@ -24,11 +24,11 @@ index of  -  \css   -   \admin
 
 04 - ` HEAD/HTTP/1.0 Host:site.com.br `  Obs: Utilize este metodo quando o site possuir hospedagem compartilhada ou algum tipo de firewall.
 
-**Brute force - Arquivos e Diretórios
+**Brute force - Arquivos e Diretórios**
 
 ` dirb http://site.com.br `
 
-**Conhecendo o Curl
+**Conhecendo o Curl**
 
 Pesquisa normal: `curl site.com.br`
 
@@ -40,7 +40,7 @@ Filtrando por status code da pagina: `curl -s -o /dev/null -w "%{http_code}" sit
 
 Mudando o user agent: `curl -v -H "User-Agent: xxxx" site.com.br`
 
-**WhatWeb
+**WhatWeb**
 
 `whatweb site.com.br`
 
