@@ -101,7 +101,7 @@ host -t ptr $1.$ip | grep -v "$1" | cut -d " " -f 5
 done
 ```
 
-script para subdomain takeover
+Script para subdomain takeover
 
 ```
 #!/bin/bash
@@ -114,6 +114,52 @@ script para subdomain takeover
 for palavra in $(cat lista.txt);do
 host -t cname $palavra.$1 | grep "alias for"
 done
+
+```
+
+Script para recon de websites e encotrar diretorios e extenções predefinidas.
+
+```
+#!/bin/bash
+
+#Script para recon de websites e encotrar diretorios e extenções predefinidas.
+#Exemplo de uso
+#./script site.com.br ou ./script site.com.br php
+
+echo "___________________________________________________"
+echo "DIRETORIOS ENCONTRADOS:"
+echo "___________________________________________________"
+
+for palavra in $(cat lista2.txt)
+do
+
+resposta=$(curl -s -H "User-Agent: Firefox" -o /dev/null -w "%{http_code}" $1/$palavra/)
+
+if [ $resposta == "200" ]
+then
+
+echo "$1/$palavra"
+
+fi
+done
+
+echo "___________________________________________________"
+echo "ARQUIVOS $2 ENCONTRADOS:"
+echo "___________________________________________________"
+
+for palavra in $(cat lista2.txt)
+do
+
+resposta2=$(curl -s -H "User-Agent: Firefox" -o /dev/null -w "%{http_code}" $1/$palavra.$2)
+
+if [ $resposta2 == "200" ]
+then
+
+echo "$1/$palavra.$2"
+
+fi
+done
+
 ```
 
 
