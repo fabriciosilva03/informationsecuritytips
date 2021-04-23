@@ -117,7 +117,7 @@ done
 
 ```
 
-Script para recon de websites e encotrar diretorios e extenções predefinidas.
+Script para recon de websites para encotrar diretorios e extenções predefinidas.
 
 ```
 #!/bin/bash
