@@ -157,6 +157,12 @@ flags=SA --> Porta aberta
 
 flags=RA --> Porta fechada
 
+Sem resposta --> Porta com filtro em DROP
+
+ICMP port Unreachable --> Porta com filtro em REJECT
+
+Porta fechaca (RST) --> Porta com filtro de firewall em REJECT com RST
+
 `hping3 -c 1 --syn -p 80 site.com.br`
 
 Exemplo de comando para verificar se uma porta esta aberta atraves da resposta da flag utilizando o NMAP.
@@ -176,4 +182,6 @@ Analisando as repostas de um range de portas
 Analisando a resposta de forma detalhada da porta setada
 
 ` nmap -sS -p 80 -Pn site.com.br --reason `
+
+
 
