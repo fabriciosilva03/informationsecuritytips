@@ -169,4 +169,11 @@ Exemplo de comando para verificar se uma porta esta aberta atraves da resposta d
 
 ` nmap -sS -p 80 -Pn site.com.br `
 
+Analisando as repostas de um range de portas
+
+` nmap -sS -p 23,80,8850 -Pn site.com.br `
+
+Analisando a resposta de forma detalhada da porta setada
+
+` nmap -sS -p 80 -Pn site.com.br --reason `
 
