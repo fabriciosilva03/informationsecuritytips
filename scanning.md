@@ -119,7 +119,7 @@ Acessando o manual do ICMP
 
 `man icmp`
 
-Descobrindo hosts ativos: Pentest Interno
+**Descobrindo hosts ativos: Pentest Interno**
 
 Utilizando ARPING
 
@@ -133,26 +133,40 @@ Comando utilizado em ARPING para indentificar todos os hosts da rede:
 
 ` arp-scan -l `
 
+**Descobrindo hosts ativos: NMAP**
 
+Analisando um ip especifico com nmap:
 
+`namp -sn 192.168.0.1`
 
+Analisando range de ip com o nmap:
 
+`namp -sn 192.168.0.1-100`
 
+`namp -sn 192.168.0.0/24`
 
+Analisando hosts e gerando um arquivo de com as informações coletadas pelo nmap
 
+`namp -sn 192.168.0.0/24 -oG hostsativos`
 
+Estudo técnico: Port Scanning
 
+Exemplo de comando para verificar se uma porta esta aberta atraves da resposta da flag utilizando o HPING3.
 
+flags=SA --> Porta aberta
 
+flags=RA --> Porta fechada
 
+`hping3 -c 1 --syn -p 80 site.com.br`
 
+Exemplo de comando para verificar se uma porta esta aberta atraves da resposta da flag utilizando o NMAP.
 
+-sS --> s = scanner S = SYN
 
+-p --> porta
 
+-Pn --> ignora hosts ativos
 
-
-
-
-
+` nmap -sS -p 80 -Pn site.com.br `
 
 
