@@ -1,5 +1,5 @@
 
-**TTL (Time to Live)**
+## TTL (Time to Live)
 
 - Tempo de vida de um pacote na rede.
 
@@ -52,7 +52,7 @@ Analisando rota utilizando o protocolo UDP e a porta 53: *Obs: Utilizando o -U e
 
 `traceroute site.com.br -n -U `
 
-**Overview sobre Firewall com IPTABLES**
+## Overview sobre Firewall com IPTABLES
 
 Comando para verificar como esta as regras de firewall
 
@@ -99,7 +99,7 @@ Bloqueando um protocolo e uma porta especifica:
 `iptables -A INPUT -p tcp --dport 80 -j DROP `
 
 
-**Descobrindo hosts ativos: Ping Sweep**
+##  Descobrindo hosts ativos: Ping Sweep
 
 Verificando quais hosts estão ativos atrves do ping:
 
@@ -119,7 +119,7 @@ Acessando o manual do ICMP
 
 `man icmp`
 
-**Descobrindo hosts ativos: Pentest Interno**
+##  Descobrindo hosts ativos: Pentest Interno
 
 Utilizando ARPING
 
@@ -133,7 +133,7 @@ Comando utilizado em ARPING para indentificar todos os hosts da rede:
 
 ` arp-scan -l `
 
-**Descobrindo hosts ativos: NMAP**
+## Descobrindo hosts ativos: NMAP
 
 Analisando um ip especifico com nmap:
 
