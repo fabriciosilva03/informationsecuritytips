@@ -21,6 +21,11 @@ Modificando a quantidade de TTLs
 
 `traceroute site.com.br -m 1`
 
+Estipulando apartir de qual salto desejo acompanhar.
+
+`traceroute site.com.br -m 20 -f 15`
+
+
 
 
 
