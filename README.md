@@ -53,6 +53,10 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-web.md">  Information Gathering - WEB </a>
 
+**Scanning**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/scanning.md">  Scanning </a>
+
 ## **Terminal Linux**
 
 ##### __________________________________________________
