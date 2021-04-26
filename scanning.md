@@ -99,6 +99,52 @@ Bloqueando um protocolo e uma porta especifica:
 `iptables -A INPUT -p tcp --dport 80 -j DROP `
 
 
+**Descobrindo hosts ativos: Ping Sweep**
+
+Verificando quais hosts estão ativos atrves do ping:
+
+` for ip in $(seq 1 254); do ping -c 1 172.16.1.$ip;done | grep "64 bytes" `
+
+Verificando quais hosts estão ativos atrves do ping, tempo de espera 1 segundo:
+
+` for ip in $(seq 1 254); do ping -c 1 192.168.0.$ip -w 1;done | grep "64 bytes" `
+
+utilizando o FPING para descobrir hosts ativos
+
+` fping -a -g 192.168.0.0/24 `
+
+*Obs: Não confie segamente em uma técnica.*
+
+Acessando o manual do ICMP
+
+`man icmp`
+
+Descobrindo hosts ativos: Pentest Interno
+
+Utilizando ARPING
+
+` arping -c 1 192.168.0.1 `
+
+Analisnado um range de IPs com arping
+
+` for ip in $(seq 1 14);do arping -c 1 192.168.0.$ip;done | grep "60 bytes" `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
