@@ -183,5 +183,24 @@ Analisando a resposta de forma detalhada da porta setada
 
 ` nmap -sS -p 80 -Pn site.com.br --reason `
 
+Analisando a resposta da porta setada utilizando o scan TCPConnect
+
+*Obs: O scan tcpconnect ou tcp scan realiza o three way handshake
+
+` nmap -sT -p 80 -Pn site.com.br`
+
+Analisando a resposta da porta setada utilizando o FIN Scan
+
+` nmap -sF -p 80 -Pn site.com.br`
+
+Analisando a resposta da porta setada utilizando o NULL Scan
+
+` nmap -sN -p 80 -Pn site.com.br`
+
+*Obs: Os scanners FIN e NULL não são tão eficientes pois não tem respostas precisas sobre a porta setada.
+
+
+
+
 
 
