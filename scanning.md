@@ -44,10 +44,13 @@ Analisando rota utilizando o protocolo TCP:
 
 `traceroute site.com.br -n -T`
 
-Analisando rota utilizando o protocolo TCP e um porta especifica:
+Analisando rota utilizando o protocolo TCP e uma porta especifica:
 
 `traceroute site.com.br -n -T -p 443`
 
+Analisando rota utilizando o protocolo UDP e a porta 53: *Obs: Utilizando o -U ele seta de forma automatica a porta 53 do protocolo UDP.*
+
+`traceroute site.com.br -n -U `
 
 
 
