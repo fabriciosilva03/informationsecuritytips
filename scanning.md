@@ -52,5 +52,38 @@ Analisando rota utilizando o protocolo UDP e a porta 53: *Obs: Utilizando o -U e
 
 `traceroute site.com.br -n -U `
 
+**Overview sobre Firewall**
+
+Comando para verificar como esta as regras de firewall
+
+`iptables -nL`
+
+Bloqueando acesso total a maquina:
+
+`iptables -P INPUT DROP`
+
+Habilitando somente um porta especifica:
+
+`iptables -A INPUT -p tcp --dport 80 -j ACCEPT `
+
+Habilitando o protocolo ICMP:
+
+`iptables -A INPUT -p icmp -j ACCEPT `
+
+Habilitando somente um porta especifica para um host especifico:
+
+`iptables -A INPUT -p tcp --dport 80 -s 192.680.0.1 -j ACCEPT `
+
+Resetando a regra de firewall
+
+`iptables -F`
+
+Habilitando o protocolo ICMP com um tipo especifico:
+
+`iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT `
+
+
+
+
 
 
