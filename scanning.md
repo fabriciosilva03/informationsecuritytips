@@ -129,6 +129,12 @@ Analisnado um range de IPs com arping
 
 ` for ip in $(seq 1 14);do arping -c 1 192.168.0.$ip;done | grep "60 bytes" `
 
+Comando utilizado em ARPING para indentificar todos os hosts da rede:
+
+` arp-scan -l `
+
+
+
 
 
 
