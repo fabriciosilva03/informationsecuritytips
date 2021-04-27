@@ -107,7 +107,28 @@ Abrindo o editor de Hexadeximal para alterar o banner do binario
 
 `bless sshd`
 
+## OS Fingerprinting
 
+-**TTL** - Cada sistema operacional utiliza um padrão de TTL
+
+**Windos** = 128  ,  **Linux** = 64  ,  **FreeBSD** = 64  ,  **Solaris** = 255 ,   **CISCO** = 254
+
+- Analise de serviços (remote desktop(3389)/ssh(22)/webserver)
+- Implementação da pilha TCP/IP
+- Enumeração deserviços identificados
+- Nmap -O / -A
+
+Comando para descobrir se um host possui o sistema operacional windows:
+
+`rdesktop 192.168.0.1`
+
+Utilizando o nmap para identificar o Sistema Operacional do host:
+
+`nmap -v -O 192.168.0.1 -Pn`
+
+Comando para alterar o TTL para enganar o atacante:
+
+`echo "123" > /proc/sys/net/ipv4/ip_default_ttl`
 
 
 ## Listando portas e serviços padrões:
