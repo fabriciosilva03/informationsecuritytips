@@ -65,7 +65,52 @@ Scannenado todas as portas que utilizam o HTTP:
 
 `nmap -sS -p http* --open -Pn -iL hosts`
 
-Listando portas e serviços padrões:
+
+## Identificando Serviços
+
+Comando verificar portas ativas e possiveis serviços que rodan nestas portas de acordo com a tabela padrão.
+
+`nmap -v -sS -Pn 192.168.0.1`
+
+*Obs: Mas para ter certerza sobre se estes serviços correspondem realmente as portas citadas realiza um novo scan com um comando com o NMPA utilizando -sV*
+
+`nmap -v -sV -Pn 192.168.0.1`
+
+*O comando -sV ira tentanr se conectar com o serviço e verificar realemnte os dados do serviço em execução.*
+
+
+## Estudo técnico: Enganando o Atacante
+
+**Exemplo altenrando o banner do serviço SSH
+
+Install Bless
+
+`apt install bless`
+
+Localizando sshd
+
+`whereis sshd`
+
+Analisando o binario encontrado
+
+`strings /usr/sbin/sshd`
+
+*Obs: Antes de alterar o banner do serviço faça uma copia de segurança do mesmo.*
+
+`cp /usr/sbin/sshd root/Desktop`
+
+Localizando dados do banner
+
+`strings /usr/sbin/sshd | greep "OpenSSH" `
+
+Abrindo o editor de Hexadeximal para alterar o banner do binario
+
+`bless sshd`
+
+
+
+
+## Listando portas e serviços padrões:
 
 `cat /etc/services`
 
