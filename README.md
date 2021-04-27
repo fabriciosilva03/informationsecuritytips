@@ -57,6 +57,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/scanning.md">  Scanning </a>
 
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/metodologiascanning.md">  Metodologia Scanning </a>
+
+
 ## **Terminal Linux**
 
 ##### __________________________________________________
