@@ -45,9 +45,9 @@ Se conectando no serviço para saber se ele realmente esta ativo:
 ## NETWORK SWEEPING
 - INDENTIFICAR PORTAS ABERTAS NA REDE OTIMIZANDO A BUSCA
 
-Scanneando hosts:
+Scanneamento para identificar hosts ativos:
 
-`namp -v -sn 192.168.0.0/24 -oG`
+`namp -v -sn 192.168.0.0/24 -oG ativos.txt`
 
 
 
