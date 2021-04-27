@@ -78,6 +78,10 @@ Liberando todas as regras de SAIDA para um IP especifico:
 
 `iptables -A OUTPUT -d 192.168.0.1 -j ACCEPT`
 
+Zerando dados coletados das regras:
+
+`iptables -Z`
+
 Habilitando somente uma porta especifica:
 
 `iptables -A INPUT -p tcp --dport 80 -j ACCEPT `
