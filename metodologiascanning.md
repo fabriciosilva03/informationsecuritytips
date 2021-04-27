@@ -51,7 +51,23 @@ Scanneamento para identificar hosts ativos:
 
 Filtrando dados coletados:
 
-`greep "Up" ativos.txt | cut -d " " -f 2 > hosts
+`greep "Up" ativos.txt | cut -d " " -f 2 > hosts`
+
+Scanneando somente os host coletados e indentificando se os mesmos possuem um porta especifica ativa.
+
+`nmap -sS -p 80 --open -Pn -iL hosts`
+
+Scannenado e coletando o banner:
+
+`nmap -sSV -p 80 --open -Pn -iL hosts -oG web.txt`
+
+Scannenado todas as portas que utilizam o HTTP:
+
+`nmap -sS -p http* --open -Pn -iL hosts`
+
+Listando portas e serviços padrões:
+
+`cat /etc/services`
 
 
 
