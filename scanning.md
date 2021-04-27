@@ -58,6 +58,10 @@ Comando para verificar como esta as regras de firewall
 
 `iptables -nL`
 
+Comando para verificar como esta as regras de firewall de forma detalhada
+
+`iptables -nvL`
+
 Bloqueando todos as regras de acesso de ENTRADA:
 
 `iptables -P INPUT DROP`
@@ -65,6 +69,14 @@ Bloqueando todos as regras de acesso de ENTRADA:
 Liberando todas as regras de ENTRADA:
 
 `iptables -P INPUT ACCEPT`
+
+Liberando todas as regras de ENTRADA para um IP especifico:
+
+`iptables -A INPUT -s 192.168.0.1 -j ACCEPT`
+
+Liberando todas as regras de SAIDA para um IP especifico:
+
+`iptables -A OUTPUT -d 192.168.0.1 -j ACCEPT`
 
 Habilitando somente uma porta especifica:
 
