@@ -49,6 +49,9 @@ Scanneamento para identificar hosts ativos:
 
 `namp -v -sn 192.168.0.0/24 -oG ativos.txt`
 
+Filtrando dados coletados:
+
+`greep "Up" ativos.txt | cut -d " " -f 2 > hosts
 
 
 
