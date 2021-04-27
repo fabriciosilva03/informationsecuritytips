@@ -81,7 +81,7 @@ Comando verificar portas ativas e possiveis serviços que rodan nestas portas de
 
 ## Estudo técnico: Enganando o Atacante
 
-**Exemplo altenrando o banner do serviço SSH
+**Exemplo altenrando o banner do serviço SSH**
 
 Install Bless
 
