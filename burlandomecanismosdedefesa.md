@@ -86,21 +86,13 @@ Incluindo a nova regra criada
 
 ` include $RULE_PATH/novasregras.rules `
 
+## Estudo técnico: Bypass de regras de IDS
 
+Bypass utilizando o PING. 
 
+*Obs: O baypass foi realizado com sucesso pois na regra era esperado um sequencia de hexadeciamal padrão e não um sequencia hexadecimal aleatória.
 
-
-
-
-
-
-
-
-
-
-
-
-
+`ping -c1 -p "6465736563" 192.168.0.1`
 
 
 
