@@ -54,7 +54,9 @@ Exemplo de regra simples:
 
 Criando o arquivo
 
-`nano regra01.rules`
+`nano novasregras.rules`
+
+*Obs: O arquivo criado deve ser armazenado ou criado de forma direta dentro do diretorio /etc/snort/rules.*
 
 Implementando regras
 
@@ -66,6 +68,13 @@ Implementando regras
 
 `alert tcp any any -> 192.168.0.1 22 (msg: "Pacote SYN enviado ao SSH"; flags:S;sid:1000002; rev:001;)`
 
+*Regra 03:*
+
+`alert tcp any any -> 192.168.0.1 80 (msg: "Acesso ao arquivo robots.txt";content:"robots.txt";sid:1000003; rev:001;)`
+
+*Regra 04:*
+
+`alert tcp any any -> 192.168.0.1 80 (msg: "Possivel ataque SqlInjection";content:"%27";sid:1000004; rev:001;)`
 
 *Obs: Apos criar sua regra personalizada, vocẽ deve incluir a mesma no snort.conf.*
 
@@ -75,7 +84,7 @@ Atulizando listas de regras
 
 Incluindo a nova regra criada
 
-` include $RULE_PATH/regra01.rules `
+` include $RULE_PATH/novasregras.rules `
 
 
 
