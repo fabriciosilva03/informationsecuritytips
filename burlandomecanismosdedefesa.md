@@ -6,6 +6,11 @@ Scaneando host definindo uma porta de origem, se o firewall não estiver bem con
 
 *Obs: Caso acha regra de firewal e no caso há uma possivel aplicação web em execução so será possivel acessa se você definir uma porta de origem.*
 
+*Algumas portas de origem que podemos utilizar:*
+- 53
+- 80
+- 443
+
 Acessando via NetCat definindo uma portade origem:
 
 `nc -vn -p 53 192.168.0.1 8180
