@@ -94,6 +94,11 @@ Bypass utilizando o PING.
 
 `ping -c1 -p "6465736563" 192.168.0.1`
 
+Bypass utilizando o HPING. 
+
+`hping3 --icmp -C 8 -K 1 -c 1 192.168.0.1`
+
+*Obs: Para que cada baypass seja bem sucedido é preciso realizar testes e indentificar quais as possiveis regras é utilizada para detectar tais serviços, e com isso o ideal é que seja montado um laboratório ou analisar estudos ja desenvolvidos sobre os princiapis tipos de regras implementadas em IDS.
 
 
 
