@@ -18,6 +18,79 @@ GET / HTTP/1.0
 `
 ## IDS - Sistema de Detecção de Intrusos
 
+Instalando Ferramenta:
+
+`apt install snort`
+
+Listando as regras que o SNORT possui:
+
+`cd /etc/snort/rules`
+
+`ls`
+
+*Obs: É possivel alimentar as regras disponiveis, baixar novas regras ou criar suas proprias regras.*
+
+Exemplo de uso:
+
+Implementando regra:
+
+`snort -A fast -q -h 192.168.0.0/24 -c snort.conf`
+
+Monitorando:
+
+`tail -f alert`
+
+Localização dos logs salvos:
+
+`cd /var/log/snort`
+
+Comando para acompanhar de forma direta tudo que esta acontencendo na maquina que possui o IDS instaldo:
+
+`snort -A console -q -h 192.168.0/24 -c snort.conf`
+
+## Entendendo e criando regras de IDS
+
+Exemplo de regra simples:
+
+Criando o arquivo
+
+`nano regra01.rules`
+
+Implementando regras
+
+*Regra 01:*
+
+`alert tcp any any -> 192.168.0.1 any (msg: "Port Scannning"; sid:1000001; rev:001;)`
+
+*Regra 02:*
+
+`alert tcp any any -> 192.168.0.1 22 (msg: "Pacote SYN enviado ao SSH"; flags:S;sid:1000002; rev:001;)`
+
+
+*Obs: Apos criar sua regra personalizada, vocẽ deve incluir a mesma no snort.conf.*
+
+Atulizando listas de regras
+
+` nano /etc/snort/snort.conf`
+
+Incluindo a nova regra criada
+
+` include $RULE_PATH/regra01.rules `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
