@@ -74,7 +74,7 @@ Implementando regras
 
 *Regra 04:*
 
-`alert tcp any any -> 192.168.0.1 80 (msg: "Possivel ataque SqlInjection";content:"%27";sid:1000004; rev:001;)`
+`alert tcp any any -> 192.168.0.1 80 (msg: "Possivel ataque Sql Injection";content:"%27";sid:1000004; rev:001;)`
 
 *Obs: Apos criar sua regra personalizada, vocẽ deve incluir a mesma no snort.conf.*
 
