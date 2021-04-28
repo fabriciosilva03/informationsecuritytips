@@ -16,6 +16,10 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/write-ups.md"> Write-Ups </a>
 
+:unlock: **BURLANDO MECANISMOS DE DEFESA:**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/burlandomecanismosdedefesa.md">Burlando Mecanismos de Defesa</a>
+
 :mosquito:	**VULNERABILIDADES:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/localfileinclusion.md">LFI</a>
