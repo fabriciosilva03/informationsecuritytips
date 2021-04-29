@@ -139,7 +139,8 @@ Scan Simples
 
 `nano scanscapy.py`
 
-`#!/usr/bin/python
+```
+#!/usr/bin/python
 import sys
 from scapy.all import *
 
@@ -152,11 +153,11 @@ pTCP = TCP(dport=portas,flags="S")
 pacote = pIP/pTCP
 resp, noresp = sr(pacote)
 resp.show()
-`
+```
 
 Scan mais detalho
 
-`
+```
 #!/usr/bin/python
 import sys
 from scapy.all import *
@@ -190,12 +191,11 @@ for resposta in resp:
 
 #Flags
 #print resp[0][1][TCP].flags
-
-`
+```
 
 Escan mais detalhado e filtrado
 
-`
+```
 #!/usr/bin/python
 import sys
 from scapy.all import *
@@ -231,7 +231,7 @@ for resposta in resp:
 
 #Flags
 #print resp[0][1][TCP].flags
-`
+```
 
 
 
