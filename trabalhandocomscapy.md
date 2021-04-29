@@ -110,6 +110,36 @@ ou
 
 `resp.show`
 
+## Criando pacotes ICMP e payloads
+
+Enviando pacote ICMP
+
+`pacote = pIP/ICMP()`
+
+Enviando pacote
+
+`resposta = sr1(pacote)`
+
+Enviando payload com ICMP
+
+`pacote = pIP/ICMP()/"PAYLOAD"`
+
+Enviando pacote
+
+`resposta = sr1(pacote)`
+
+Enviando payload com TCP
+
+`pacote = pIP/TCP()/"PAYLOAD"`
+
+
+## Criando um portscan com Scapy
+
+`nano scanscapy.py`
+
+`
+
+
 
 
 
