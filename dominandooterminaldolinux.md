@@ -214,7 +214,7 @@ Ex ``` cut -d -f1-6 arquivo```
 
 Ex ``` sed 's/palavrax/palavray/' arquivo```
 
-## TOOLS KALI ```
+## TOOLS KALI
 
 **Quebrar senhas **
 
@@ -251,7 +251,7 @@ Ex
 ``` printf "\x..\x..\x..\x..\x..\x..\n" ```
 
 
-**TCPDUMP **
+## TCPDUMP 
 
 **Capturando trafego**
 
@@ -266,7 +266,7 @@ Ex
 ``` tcpdump -vnr {arquivo}.pcap port 21 ```
 
 
-**O COMANDO WC**
+## O COMANDO WC
 
 Este comando é utilizado para contar caracteres, palavras e/ou linhas dos dados da entrada padrão e apresenta o resultado na saída padrão.
 
