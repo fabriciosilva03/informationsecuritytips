@@ -46,16 +46,16 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 ##
 
 
-**Dominando o Terminal do Linux:**
+:man_technologist: **Dominando o Terminal do Linux:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dominandooterminaldolinux.md"> Dominando o Terminal do Linux </a>
 
 
-**Swiss Army Knife | Canivete Suiço:**
+:knife: **Swiss Army Knife | Canivete Suiço:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/swissarmyknife.md"> Swiss Army Knife </a>
 
-**Information Gathering:**
+:mag: **Information Gathering:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-business.md"> Information Gathering Business</a>
 
@@ -63,7 +63,7 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-web.md">  Information Gathering - WEB </a>
 
-**Scanning**
+:telescope: **Scanning**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/scanning.md">  Scanning </a>
 
