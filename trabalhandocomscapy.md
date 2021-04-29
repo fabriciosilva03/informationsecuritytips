@@ -233,9 +233,58 @@ for resposta in resp:
 #print resp[0][1][TCP].flags
 ```
 
+*Obs: A execução dos scripts em python devem ser executado com python3*
 
 
+## Ping Scan com Scapy
 
+Criando o arquivo
+
+``` nano pingscapy.py```
+
+Inserindo os scripts
+
+```
+#!/usr/bin/python
+import sys
+from scapy.all import *
+
+conf.verb =  0
+
+portas = [21,22,23,25,80,443,110]
+
+pIP = IP(dst=sys.argv[1])
+pTCP = TCP(dport=portas,flags="S")
+pacote = pIP/pTCP
+resp, noresp = sr(pacote)
+#resp.show()
+
+#Lendo todas as respostas
+
+for resposta in resp:
+	porta = resposta[1][TCP].sport
+	flag = resposta[1][TCP].flags
+#	print ("%d %s"  %(porta,flag))
+	if (flag == "SA"):
+		print ("Porta %d ABERTA" %(porta))
+
+
+#Analisando um unico pacote de envio
+#print resp[0][0].show
+
+#Analisando pacote de resposta
+#print resp[0][1].show
+
+#Porta de orgigem
+#print resp[0][1][TCP].sport
+
+#Flags
+#print resp[0][1][TCP].flags
+```
+
+Executando o script
+
+``` python3  pingscapy.py  ```
 
 
 
