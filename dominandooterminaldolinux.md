@@ -1,6 +1,6 @@
 ## **Terminal Linux**
 
-## INTRODUÇÂO ``` 
+## INTRODUÇÂO  
 
 
 ``` pwd ``` Lista o endereço do seu diretorio atual.
@@ -47,7 +47,7 @@
 
 
 
-## GERENCIAMENTO DE USUÁRIO ```
+## GERENCIAMENTO DE USUÁRIO 
 
 ```adduser {usuario}  ``` Adicionando usuário.
 
@@ -116,7 +116,7 @@ Esc
 
 ```leafpad  ``` Editor de texto simples em modo gráfico.
 
-## PACOTES ```
+## PACOTES 
 
 ```/etc/apt/sources.list  ``` Este arquivo contem a lista de repositorios de download de pacotes do sitema.
 
@@ -135,7 +135,7 @@ Esc
 ```dpkg -l  ``` lista pacotes dpkg instalados no sistema.
 
 
-## SERVIÇOS ```
+## SERVIÇOS 
 
 ```service {serviço} start  ``` iniciando o serviço.
 
@@ -151,7 +151,7 @@ Esc
 
 ```poweroff  ``` comando para desligar o sistema.
 
-## ARQUIVOS ```
+## ARQUIVOS 
 
 ```locate {arquivo}  ``` comando para localizar o arquivo.
 
@@ -216,7 +216,7 @@ Ex ``` sed 's/palavrax/palavray/' arquivo```
 
 ## TOOLS KALI ```
 
-**Quebrar senhas ```**
+**Quebrar senhas **
 
 ```hashcat -m0 hash.txt passlist.txt```
 
@@ -276,7 +276,7 @@ Este comando é utilizado para contar caracteres, palavras e/ou linhas dos dados
 
 ``` -c ``` conta os caracteres.
 
-Exemplos ```
+Exemplos
 
 ```wc -l texto.txt```
 
