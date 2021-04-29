@@ -133,11 +133,26 @@ Enviando payload com TCP
 `pacote = pIP/TCP()/"PAYLOAD"`
 
 
-## Criando um portscan com Scapy
+## Criando um portscan com Scapy com python
 
 `nano scanscapy.py`
 
+`#!/usr/bin/python
+import sys
+from scapy.all import *
+
+conf.verb =  0
+
+portas = [21,22,23,25,80,443,110]
+
+pIP = IP(dst=sys.argv[1])
+pTCP = TCP(dport=portas,flags="S")
+pacote = pIP/pTCP
+resp, noresp = sr(pacote)
+resp.show()
 `
+
+
 
 
 
