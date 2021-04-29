@@ -92,19 +92,19 @@
 
 ```nano {nomearquivo}  ``` Criar e abre o arquivo para ser editado via editor nano.
 
-Exemplo de atalho no editor nano ```
+Exemplo de atalho no editor nano 
 
-Ctrl + x  ``` Exit
+```Ctrl + x  ``` Exit
 
-vi {nomearquivo}  ``` Abre arquivo para ser editado via editor vi.
+```vi {nomearquivo}  ``` Abre arquivo para ser editado via editor vi.
 
-Exemplo de buscar algo no vi ```
+Exemplo de buscar algo no vi
 
-Esc 
+```Esc``` 
 
 /nomebuscado.
 
-Exemplos de comandos Vi ```
+Exemplos de comandos Vi
 
 Esc
 
@@ -114,131 +114,131 @@ Esc
 
  ```wq  ``` Salva o arquivo e sai do editor.
 
-leafpad  ``` Editor de texto simples em modo gráfico.
+```leafpad  ``` Editor de texto simples em modo gráfico.
 
 ## PACOTES ```
 
-/etc/apt/sources.list  ``` Este arquivo contem a lista de repositorios de download de pacotes do sitema.
+```/etc/apt/sources.list  ``` Este arquivo contem a lista de repositorios de download de pacotes do sitema.
 
-apt update  ``` Comando para atualizar o sistema.
+```apt update  ``` Comando para atualizar o sistema.
 
-apt upgrade  ``` Instala as atualizações baixadas.
+```apt upgrade  ``` Instala as atualizações baixadas.
 
-apt search {pacote}  ``` busca por algumas aplicação disponivel no meu repositorio.
+```apt search {pacote}  ``` busca por algumas aplicação disponivel no meu repositorio.
 
-apt install {pacote}  ``` instala aplicação no meu sistema.
+```apt install {pacote}  ``` instala aplicação no meu sistema.
 
-apt remove {pacote}  ``` removendo pacote.
+```apt remove {pacote}  ``` removendo pacote.
 
-dpkg -i {arquivo.deb}  ``` comando para instalar pacotes .deb
+```dpkg -i {arquivo.deb}  ``` comando para instalar pacotes .deb
 
-dpkg -l  ``` lista pacotes dpkg instalados no sistema.
+```dpkg -l  ``` lista pacotes dpkg instalados no sistema.
 
 
 ## SERVIÇOS ```
 
-service {serviço} start  ``` iniciando o serviço.
+```service {serviço} start  ``` iniciando o serviço.
 
-service {serviço} stop  ``` Parando o serviço.
+```service {serviço} stop  ``` Parando o serviço.
 
-service {serviço} restart  ``` Reiniciando o serviço.
+```service {serviço} restart  ``` Reiniciando o serviço.
 
-update-rc.d {serviço} enable  ``` Comando para fixar um serviço, ou seja mesmo que a maquina seja reiniciada o serviço ira inciar de forma automática.
+```update-rc.d {serviço} enable  ``` Comando para fixar um serviço, ou seja mesmo que a maquina seja reiniciada o serviço ira inciar de forma automática.
 
-update-rc.d {serviço} disable  ``` Comando para desabilitar a incialização de serviços extras ao inciar a maquina.
+```update-rc.d {serviço} disable  ``` Comando para desabilitar a incialização de serviços extras ao inciar a maquina.
 
-reboot  ``` reinciar o sistema
+```reboot  ``` reinciar o sistema
 
-poweroff  ``` comando para desligar o sistema.
+```poweroff  ``` comando para desligar o sistema.
 
 ## ARQUIVOS ```
 
-locate {arquivo}  ``` comando para localizar o arquivo.
+```locate {arquivo}  ``` comando para localizar o arquivo.
 
-updatedb  ``` comando para atulizar os dados do sistema e o comando locate buscar arquivos criados recentemente.
+```updatedb  ``` comando para atulizar os dados do sistema e o comando locate buscar arquivos criados recentemente.
 
-whereis {aplicação}  ``` Buscando aplicações no sistema. Ex ``` whereis {nmap}
+```whereis {aplicação}  ``` Buscando aplicações no sistema. Ex ``` whereis {nmap}
 
-find /caminho/ -name {nomedoarquivo}  ``` comando de busca por diretorio especifico e por nome do arquivo. Ex ``` find /home/ -name artigo.doc
+```find /caminho/ -name {nomedoarquivo}  ``` comando de busca por diretorio especifico e por nome do arquivo. Ex ``` find /home/ -name artigo.doc
 
-find / -name {nomedoarquivo}  ``` comando de busca em todos os  diretorios do sistema.
+```find / -name {nomedoarquivo}  ``` comando de busca em todos os  diretorios do sistema.
 
-## GANHANDO TEMPO ```
+## GANHANDO TEMPO
 
 **GREP** 
 
-##### Buscando por linhas que contenham um trecho de especifico ```
+##### Buscando por linhas que contenham um trecho de especifico 
 
-Ex ``` cat /dir/arquivo | grep "termpobuscado"
+Ex ``` cat /dir/arquivo | grep "termpobuscado"```
 
-Ex2 ``` grep "termpobuscado" /dir/arquivo 
+Ex2 ``` grep "termpobuscado" /dir/arquivo ```
 
 ##### Buscando por linhas que contenham um trecho de especifico e armazenando dentro de um arquivo.
 
-Ex2 ``` grep "termpobuscado" /dir/arquivo > arquivo2
+Ex2 ``` grep "termpobuscado" /dir/arquivo > arquivo2```
 
-##### Buscando por linhas que não contenham um trecho de especifico ```
+##### Buscando por linhas que não contenham um trecho de especifico 
 
-Ex2 ``` grep -v "termpobuscado" /dir/arquivo
+Ex2 ``` grep -v "termpobuscado" /dir/arquivo```
 
 
 **EGREP**
 
 ##### Buscando por linhas que não contenham um mais de um trecho de especifico ```
 
-Ex2 ``` grep -v "termpobuscado|termpobuscado2" /dir/arquivo
+Ex2 ``` grep -v "termpobuscado|termpobuscado2" /dir/arquivo```
 
 
 **AWK**
 
 ##### Exibindo apenas partes por coluna especifica.
 
-Ex ``` awk -F  ``` '{print $1}' arquivo
+Ex ``` awk -F '{print $1}' arquivo```
 
-Ex2 ``` awk -F  ``` '{print $1,$6}' arquivo
+Ex2 ``` awk -F '{print $1,$6}' arquivo```
 
 **CUT**
 
 #####  Exibe informações apartir de delimitadores
 
-Ex ``` cut -d  ``` -f1 arquivo
+Ex ``` cut -d -f1 arquivo```
 
-Ex ``` cut -d  ``` -f1,6 arquivo
+Ex ``` cut -d -f1,6 arquivo```
 
-Ex ``` cut -d  ``` -f1-6 arquivo
+Ex ``` cut -d -f1-6 arquivo```
 
 
 **SED**
 
 ##### Utilizado para auxiliar no processo de alteração de multiplos dados de um arquivo.
 
-Ex ``` sed 's/palavrax/palavray/' arquivo
+Ex ``` sed 's/palavrax/palavray/' arquivo```
 
 ## TOOLS KALI ```
 
 **Quebrar senhas ```**
 
-hashcat -m0 hash.txt passlist.txt
+```hashcat -m0 hash.txt passlist.txt```
 
-john --format=raw-md5 "Nome do arquivo que contém a hash ou as hashes" --wordlist="Diretório onde a sua lista com possíveis senhas está".
+``` john --format=raw-md5 "Nome do arquivo que contém a hash ou as hashes" --wordlist="Diretório onde a sua lista com possíveis senhas está".```
 
 **Web shell**
 
-weevely generate {senhadeacesso} {nomedabackdoor.extesão}
+```weevely generate {senhadeacesso} {nomedabackdoor.extesão}```
 
 **Convertendo dados hexadecimais**
 
-Ex ```
+Ex 
 
-printf "%d\n" 0x....
+``` printf "%d\n" 0x.... ```
 
-Ex2 ```
+Ex2
 
-printf "%d.%d.%d.%d\n" 0x.. 0x... 0x... 0x...
+```printf "%d.%d.%d.%d\n" 0x.. 0x... 0x... 0x...```
 
 **Listando os codigos de cada tipo de protocolo**
 
-cat /etc/protocols
+```cat /etc/protocols```
 
 **Manual da tabela ascii**
 
@@ -246,46 +246,46 @@ man ascii
 
 **Convertendo dados da tabela ascii**
 
-Ex ```
+Ex
 
-printf "\x..\x..\x..\x..\x..\x..\n" 
+``` printf "\x..\x..\x..\x..\x..\x..\n" ```
 
 
-**TCPDUMP ```**
+**TCPDUMP **
 
 **Capturando trafego**
 
-tcpdump -vnw {arquivo}.pcap
+``` tcpdump -vnw {arquivo}.pcap ```
 
 **Leitura do trafego capturado.**
 
-tcpdump -vnr {arquivo}.pcap
+``` tcpdump -vnr {arquivo}.pcap ```
 
-**Leitura filtrada por porta ```**
+**Leitura filtrada por porta**
 
-tcpdump -vnr {arquivo}.pcap port 21
+``` tcpdump -vnr {arquivo}.pcap port 21 ```
 
 
 **O COMANDO WC**
 
 Este comando é utilizado para contar caracteres, palavras e/ou linhas dos dados da entrada padrão e apresenta o resultado na saída padrão.
 
--l ``` conta as linhas;
+``` -l ``` conta as linhas;
 
--w ``` conta as palavras;
+``` -w ``` conta as palavras;
 
--c ``` conta os caracteres.
+``` -c ``` conta os caracteres.
 
 Exemplos ```
 
-**wc -l texto.txt**
+```wc -l texto.txt```
 
 26 texto.txt
 
-**wc -w texto.txt**
+``` wc -w texto.txt ```
 
 14 texto.txt
 
-**wc texto.txt**
+``` wc texto.txt ```
 
 2346   282   26
