@@ -69,7 +69,7 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/metodologiascanning.md">  Metodologia Scanning </a>
 
-:unlock: **BURLANDO MECANISMOS DE DEFESA:**
+:unlock: **Burlando Mecanismos de Defesa:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/burlandomecanismosdedefesa.md">Burlando Mecanismos de Defesa</a>
 
