@@ -77,6 +77,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/trabalhandocomscapy.md"> Trabalhando com Scapy </a>
 
+:1234: ** Enumeração (Enumeration) **
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md"> Enumeração (Enumeration) </a>
 
 
 
