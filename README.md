@@ -41,7 +41,15 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/redes.md"> Redes </a>
 
+
+
 ##
+
+
+**Dominando o Terminal do Linux:**
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dominandooterminaldolinux.md"> Dominando o Terminal do Linux </a>
+
 
 **Swiss Army Knife | Canivete Suiço:**
 
