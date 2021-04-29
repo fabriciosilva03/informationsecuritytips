@@ -102,6 +102,14 @@ Criando variaveis para armazenar resposta diferentes:
 
 `resp, noresp = sr(pacote)`
 
+Listando detalhes da reposta
+
+`resp.summary`
+
+ou
+
+`resp.show`
+
 
 
 
