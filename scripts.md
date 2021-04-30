@@ -290,3 +290,34 @@ host = sys.argv[1]
 
 print host,"--->", socket.gethostbyname(host)
 ```
+
+Interagindo com FTP via python
+
+```
+#!/usr/bin/python
+
+import socket
+
+tcp=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+tcp.connect(("192.168.0.1",21))
+
+print ("Connectando ao Servidor...")
+banner = tcp.recv(1024)
+print (banner)
+
+print ("Enviando usuario...")
+tcp.send("USER ftp\r\n")
+user = tcp.recv(1024)
+print (user)
+
+print ("Enviando senha...")
+tcp.send("PASS ftp\r\n")
+pw = tcp.recv(1024)
+print (pw)
+
+print ("Enviando comando HELP...")
+tcp.send("help \r\n")
+cmd = tcp.recv(2048)
+print (cmd)
+```
+
