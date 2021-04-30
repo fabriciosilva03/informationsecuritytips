@@ -133,6 +133,60 @@ print (cmd)
 - Null Session - Sessão criada sem autenticação de usuário e senha (nulos)
 - IPC$ - Permite que usuários anônimos executem determinadas atividades
 
+## Enumerando NetBIOS/SMB no Windows
+
+NMAP
+
+`nmap -v -sV -p139,445 -Pn --open 192.168.0.1/24`
+
+WINDOWS - CMD
+
+Helpe
+
+`nbtstat`
+
+Obtendo informações do host, como nome e qual grupo ele pertence
+
+`nbtstat -A 192.168.0.1`
+
+Tentando visualizar informações da maquina
+
+`net view \\192.168.0.1`
+
+Estabelecendo sessão nula (Null Session)
+
+`net use \\192.168.0.1 "" /u:""`
+
+Estabelecendo sessão com usuario e senha, caso você tenha uma credencial
+
+`net use \\192.168.0.1 "senha" /u:"usuario"`
+
+Obtendo informações do cahe apos ja ter tido exito ao acessar algum host
+
+`nbtstat -c`
+
+Se conectando a um diretorio disponivel 
+
+`net use h: \\192.168.0.1\diretorio`
+
+Listando arquivos do diretorio conectado
+
+`net use`
+
+Desmontando um mapeamento
+
+`net use h: /delete`
+
+Deletando uma conexão estabelecida
+
+`net use \\192.168.0.1 /delete`
+
+
+
+
+
+
+
 
 
 
