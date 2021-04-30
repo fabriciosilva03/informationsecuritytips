@@ -124,6 +124,16 @@ cmd = tcp.recv(2048)
 print (cmd)
 ```
 
+## Introdução: NetBIOS/SMB
+
+*Serviço que permite compartilhamento de arquivos e diretorios*
+
+- NetBIOS - 139 (TCP)
+- SMB - 445 (TCP)
+- Null Session - Sessão criada sem autenticação de usuário e senha (nulos)
+- IPC$ - Permite que usuários anônimos executem determinadas atividades
+
+
 
 
 
