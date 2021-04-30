@@ -102,7 +102,7 @@ Exemplo 02
 import socket
 
 tcp=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-tcp.connect(("172.16.1.108",21))
+tcp.connect(("192.168.0.1",21))
 
 print ("Connectando ao Servidor...")
 banner = tcp.recv(1024)
