@@ -71,7 +71,7 @@ Exemplo 01
 
 `wafw00f site.com`
 
-*Obs: **wafw00f** - ferramenta utilizada para identificar qual WAF esta sendo utilizado em uma aplicação web.
+*Obs: **wafw00f** - ferramenta utilizada para identificar qual WAF esta sendo utilizado em uma aplicação web.*
 
 
 ## Enumerando FTP
@@ -95,6 +95,34 @@ Exemplo 02
 
 
 ## Interagindo com FTP (Python)
+
+```
+#!/usr/bin/python
+
+import socket
+
+tcp=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+tcp.connect(("172.16.1.108",21))
+
+print ("Connectando ao Servidor...")
+banner = tcp.recv(1024)
+print (banner)
+
+print ("Enviando usuario...")
+tcp.send("USER ftp\r\n")
+user = tcp.recv(1024)
+print (user)
+
+print ("Enviando senha...")
+tcp.send("PASS ftp\r\n")
+pw = tcp.recv(1024)
+print (pw)
+
+print ("Enviando comando HELP...")
+tcp.send("help \r\n")
+cmd = tcp.recv(2048)
+print (cmd)
+```
 
 
 
