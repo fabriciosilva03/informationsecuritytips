@@ -321,6 +321,21 @@ Obtendo informações de compartilhamento
 
 ## Scripts para enumeração NetBIOS/SMB
 
+Listando scripts do NMAP especificos para SMB
+
+`ls /usr/share/nmap/scripts/smb`
+
+Executando script para identificar o Sistema Operacional
+
+`nmap -v --script=smb-os-discovery 192.168.0.1`
+
+Executando script ṕara identificar se o host possui vulnerabilidade aos scripts executados.
+
+`nmap -v --script=smb-vuln-ms* 192.168.0.1`
+
+
+
+
 
 
 
