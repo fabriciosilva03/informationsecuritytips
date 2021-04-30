@@ -20,6 +20,7 @@
 - Tecnologias utilizadas(PHP, ASP, JSP, etc.)
 - Métodos aceitos(PUT,POST,DELETE, etc.)
 
+
 ## Como Fazer?
 
 - Portas comuns: 80,8080,81,8081
@@ -47,7 +48,6 @@ GET /index.aspx HTTP/1.0
 
 ## Enumerando HTTPs
 
-
 Exemplo 01:
 
 `openssl s_client -connet site.com:443
@@ -64,6 +64,7 @@ Host: www.site.com.br
 `
 *Obs: -quiet oculta mensagens de respostas de toda a execução inicial.*
 
+
 ## Identificando Web Application Firewalls
 
 Exemplo 01
@@ -71,6 +72,31 @@ Exemplo 01
 `wafw00f site.com`
 
 *Obs: **wafw00f** - ferramenta utilizada para identificar qual WAF esta sendo utilizado em uma aplicação web.
+
+
+## Enumerando FTP
+
+Exemplo 01
+
+`nmap -v -sV -p21,2121 -Pn --open 192.168.0.1 -oG ftp`
+
+Exemplo 02
+
+`nc -vn 192.168.0.1 21`   |   `nc -vn 192.168.0.1 2121`
+
+*Obs: Tente entender como interagir com o protocolo.*
+
+*Usuarios e senhas defaults:*
+
+- anonymous,anonymous
+- ftp,ftp
+
+*Obs: Se alguns comandos não estiverem respondendo ao acessar o servidor via ftp, ative o modo **passive**, após fazer o login.*
+
+
+## Interagindo com FTP (Python)
+
+
 
 
 
