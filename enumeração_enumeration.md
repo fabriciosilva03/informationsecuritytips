@@ -1,3 +1,25 @@
+##
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumera%C3%A7%C3%A3o-enumeration">Enumeração - Enuumeration </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-http"> Enumerando HTTP </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#como-fazer"> Como fazer </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-https"> Enumerando HTTPs  </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#identificando-web-application-firewalls"> Identificando web application firewalls </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-ftp"> Enumerando FTP </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#interagindo-com-ftp-python">Interagindo com FTP python  </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#introdu%C3%A7%C3%A3o-netbiossmb">Introdução Netbios e SMB  </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-netbiossmb-no-windows"> Enumerando-netbios smb no windows </a>
+
+## 
+
 ## Enumeração (Enumeration)
 
 - Identificar detalhes do serviço em execução.
