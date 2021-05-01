@@ -145,6 +145,7 @@ tcp.send("help \r\n")
 cmd = tcp.recv(2048)
 print (cmd)
 ```
+*Obs: Para executar o script acima utilize o python e não o python3*
 
 ## Introdução: NetBIOS/SMB
 
@@ -334,10 +335,62 @@ Executando script ṕara identificar se o host possui vulnerabilidade aos script
 `nmap -v --script=smb-vuln-ms* 192.168.0.1`
 
 
+## Enumerando POP3
+
+*Porta default = 110*
+
+NMAP
+
+Analisando um range de IPs
+
+`nmap --open -sS -p 110 -Pn 192.168.0.0/24`
+
+Analisando um IP especifico
+
+`nmap --open -sS -p 110 -Pn 192.168.0.1`
+
+Tentando obter o banner com NETCAT
+
+`nc -v 192.168.0.1 110`
+
+Se conectando via TELNET
+
+`telnet 192.168.0.1 110
+USER admin
+PASS admin
+`
 
 
+## Enumerando SMTP
 
+*Porta default = 25*
 
+NMAP
+
+`nmap --open -sS -p 25 -Pn 192.168.0/24`
+
+ou 
+
+`nmap --open -sS -p 25 -Pn 192.168.0.1`
+
+Tentando obter o banner com NETCAT e interagir com a porta
+
+`nc -v 192.168.0.1 25`
+
+Apos se conectar o serviço você pode utilizar o comando abaixo para identificar se o usuario existe:
+
+`VRFY nome_usuario`
+
+Enviando e-mail com o NETCAT
+
+`
+nc -v 192.168.0.1 25
+mail from: nome_usuario
+rcpt to: usuario_destion
+DATA
+mensagem...
+.
+`
 
 
 
