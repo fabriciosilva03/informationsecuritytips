@@ -432,13 +432,25 @@ for linha in file:
 ```
 
 
+## Enumerando dispositivos de rede
 
+*Obs: Para enumerar dispositivos o ideal é analisar se ha telnet habilitado.*
 
+*Porta padrão: 23*
 
+**Testar autenticação default:**
 
+https://cirt.net/passwords
 
+https://datarecovery.com/rd/default-passwords
 
+*CONSULTAR O MANUL DO FABRICANTE.*
 
+NMAP
+
+Analisando um range de IPs
+
+`nmap --open -sS -p 23 -Pn 192.168.0.0/24`
 
 
 
