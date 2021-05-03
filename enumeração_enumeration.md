@@ -615,6 +615,30 @@ Exemplo 03:
 `snmptranslate -TB icmp`
 
 
+## Alterando informações via SNMP
+
+Enumerando
+
+`snmp-check 192.168.0.1 -c public `
+
+Setando configurações com SNMPSET
+
+`snmpset -c manager -v1 192.168.0.1 SNMPv2-MIB::sysContact.0 s "Novo_valor"`
+
+
+## Enumerando MySQL
+
+*Porta padrão: 3306*
+
+Varrendo a rede 
+
+`nmap --open -sS -p 3306 -Pn 192.168.0.0/24`
+
+Conectando ao host encontrado
+
+`mysql -h 192.168.0.1 -u mysql`
+
+
 
 
 
