@@ -453,6 +453,14 @@ Analisando um range de IPs
 `nmap --open -sS -p 23 -Pn 192.168.0.0/24`
 
 
+## Protocolos Seguros X Inseguros
+
+*Obs: A principal diferença é que um protocolo que possui criptografia ele é mais seguro do que aquele que não possui.*
+
+
+
+
+
 
 
 
