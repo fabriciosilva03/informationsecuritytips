@@ -475,6 +475,32 @@ Metodos de autenticação
 **Tipos de autenticação:** Password, Publickey
 
 
+## Autenticação com chave pública
+
+Local de alteração de configurações do SSH
+
+`nano /etc/ssh/sshd_config`
+
+*Obs: Um dos metodos mais seguros seria deixar habilitado somente autenticação por Publickey.*
+
+Gerenado uma chave publica:
+
+1. `ssh-keygen`
+2. Defina o local de armazenamento da chave
+3. Digite um senha para ser armazenada na chave
+4. Listando as chaves criadas `ls id*`
+5. Copie os dados da chave com extenção **.pub**
+6. Adicione a copia da chave no servidor e no diretorio especifico **/.ssh/authorized_keys** 
+7. `ssh-add id_rsa` - comando para autorizar o uso da chave, comando digitado em sua maquina e não no servidor.
+
+## Enumerando Network File System
+
+
+
+
+
+
+
 
 
 
