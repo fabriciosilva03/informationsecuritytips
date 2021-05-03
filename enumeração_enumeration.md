@@ -458,6 +458,30 @@ Analisando um range de IPs
 *Obs: A principal diferença é que um protocolo que possui criptografia ele é mais seguro do que aquele que não possui.*
 
 
+## Enumerando SSH
+
+*Porta padrão: 22*
+
+Comando para obter o banner 
+
+`nc 192.168.0.1 22`
+
+Metodos de autenticação 
+
+`ssh -v 192.168.0.1`
+
+*Apos inserir o comando acima, observer no final das informações geradas o techo **Authentications that can continue:** , neste trecho sera listada as possiveis formas de autenticação.
+
+**Tipos de autenticação:** Password, Publickey
+
+
+
+
+
+
+
+
+
 
 
 
