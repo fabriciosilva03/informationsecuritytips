@@ -494,13 +494,125 @@ Gerenado uma chave publica:
 7. `ssh-add id_rsa` - comando para autorizar o uso da chave, comando digitado em sua maquina e não no servidor.
 
 ## Enumerando Network File System
+- Protocolo de compartilhamento de diretorios no linux
+
+*Porta padrão: 2049*
+
+Enumerando:
+
+Range de IPs
+
+`nmap --open -sS -p 2049 -Pn 192.168.0.0/24`
+
+Indentificando versoes suportadas
+
+`rpcinfo -p 192.168.0.1 | grep nfs`
+
+Listando diretorios exportados - compartilhamentos disponíveis que possam ser montados.
+
+`showmount -e 192.168.0.1`
+
+Criando diretorio temporario para armazenar o diretorio que sera montado
+
+`mkdir /tmp/nfs`
+
+Montando diretorio
+
+`mount -t nfs -o nfsvers=2 192.168.0.1:/ /tmp/nfs`
+
+Desmontando diretorio
+
+`umount nfs`
 
 
+## Enumerando SNMP
+
+*Protocolo de gerenciamento de dispositivos de rede.*
+
+- SNMP	-	161 (UDP)
+- OID - Object Identifier -	Código dutilizado para identficar os objetos
+- MIB - Management Information Base	-	Base contendo informações relacionadas ao gerenciamento de redes
+- Community 	-	Valor utilizado entre as partes snmp para troca de informações.
+
+Nivel de acesso (Community)
+**RO - Read Only** - Acesso de leitura
+**RW - Read Write** - Acesso de leitura / escrita
+
+Exemplos:
+Valores MIBS
+1.3.6.1.2.1.25.1.6.0	-	Processos do sitema
+1.3.6.1.4.1.77.1.2.25	-	Contas de usuários
+3.3.6.1.2.1.6.13.1.3	-	Portas TCP
+
+Community
+
+public 	- manager
+private - access
+cisco 	- secret
 
 
+**Referências:**
+https://www.alvestrand.no/objectid/1.3.6.1.html
+http://www.oid-info.com/
 
 
+Scan com NMAP
 
+`nmap -sVU -p161 -Pn 192.168.0.1 192.168.0.247`
+
+Scan com ONESIXTYONE
+
+comu.txt =
+
+public 
+
+private
+
+cisco
+
+manager
+
+juniper
+
+`onesixtyone -c comu.txt 192.168.0/24` 
+
+enumerando um host especifico com SNMPWALK para listar todos os usuarios
+
+`snmpwalk -c public -v1 192.168.0.1 1.3.6.1.4.1.77.1.2.25` 
+
+ou 
+
+`snmpwalk -c public -v1 192.168.0.1` 
+
+Buscando pacote para traduzir MIBs
+
+`apt search mibs`
+
+Instalando 
+
+`apt install snmp-mibs-downloader`
+
+Configurando 
+
+`echo "" > /etc/snmp/snmp.conf`
+
+Exemplo
+
+`snmpwalk -c public  -v1 192.168.0.1 SNMPv2-MIB::sysUpTime`
+
+SNMPTTRANSLATE - Contem a traduçãode diversos codigos bin
+
+Exemplo 01:
+
+`snmptranslate -IR sysUpTime`
+
+Exemplo 02:
+
+`snmptranslate -Td SNMPv2-MIB::sysUpTime`
+
+Exemplo 03:
+
+`snmptranslate -TB icmp`
 
 
 
