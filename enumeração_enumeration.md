@@ -530,29 +530,42 @@ Desmontando diretorio
 *Protocolo de gerenciamento de dispositivos de rede.*
 
 - SNMP	-	161 (UDP)
+
 - OID - Object Identifier -	Código dutilizado para identficar os objetos
+
 - MIB - Management Information Base	-	Base contendo informações relacionadas ao gerenciamento de redes
+
 - Community 	-	Valor utilizado entre as partes snmp para troca de informações.
 
 Nivel de acesso (Community)
+
 **RO - Read Only** - Acesso de leitura
+
 **RW - Read Write** - Acesso de leitura / escrita
 
 Exemplos:
+
 Valores MIBS
+
 1.3.6.1.2.1.25.1.6.0	-	Processos do sitema
-1.3.6.1.4.1.77.1.2.25	-	Contas de usuários
-3.3.6.1.2.1.6.13.1.3	-	Portas TCP
+
+3.3.6.1.4.1.77.1.2.25	-	Contas de usuários
+
+5.3.6.1.2.1.6.13.1.3	-	Portas TCP
 
 Community
 
 public 	- manager
+
 private - access
+
 cisco 	- secret
 
 
 **Referências:**
+
 https://www.alvestrand.no/objectid/1.3.6.1.html
+
 http://www.oid-info.com/
 
 
