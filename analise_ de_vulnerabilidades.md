@@ -117,6 +117,43 @@ https://www.pcisecuritystandards.org/documents/Penetration_Testing_Guidance_Marc
 
 ## Falsos Negativos
 
+## Revisão e dicas
+
+## NMAP NSE
+
+Localizando scripts
+
+`cd /usr/share/nmap/scripts`
+
+Lendo 
+
+`cat script.db`
+
+Validando uma vulnerabilidade
+
+`nmap -p21 --script ftp-vsftpd-backdoor.nse -Pn 192.168.0.1`
+
+*Obs: quando o script possui o campo @args ele permite a inserção de argumentos.*
+
+`nmap -p21 --script ftp-vsftpd-backdoor.nse --script-args cmd=pwd -Pn 192.168.0.1`
+
+*Obs: as vezes alguns scripts para terem resultado precisa-se passar argumentos.*
+
+*Para validar alguma vulnerabilidade faça uso do nikto ou do dirb.*
+
+## Shadow Brokers
+
+*The Shadow Brokers é um grupo de hackers que apareceu pela primeira vez no verão de 2016. Eles publicaram vários vazamentos contendo ferramentas de hacking, incluindo várias explorações de dia zero, do "Equation Group", amplamente suspeito de ser um ramo da Agência de Segurança Nacional dos Estados Unidos.*
+
+*Tambem se trata de um utilitario implementado em diversas ferramentas para detectar possíveis vulnerabilidades que tem grande impacto, exemplo de ferramenta que possui este utilitário seria o *Nessus*.
+
+
+
+
+
+
+
+
 
 
 
