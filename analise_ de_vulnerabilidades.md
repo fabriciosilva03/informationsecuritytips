@@ -113,6 +113,8 @@ https://www.pcisecuritystandards.org/document_library?category=pcidss&subcategor
 
 https://www.pcisecuritystandards.org/documents/Penetration_Testing_Guidance_March_2015.pdf
 
+## Exemplo: Compliance PCI-DSS
+
 
 
 
