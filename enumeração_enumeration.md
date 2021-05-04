@@ -1,6 +1,6 @@
 ## MENU
 
-<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumera%C3%A7%C3%A3o-enumeration">Enumeração - Enuumeration </a>
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumera%C3%A7%C3%A3o-enumeration">Enumeração - Enumeration </a>
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-http"> Enumerando HTTP </a>
 
