@@ -76,7 +76,21 @@ DESVANTAGENS
 - Cosome poder computacional
 - Gera bastante ruído na rede/host
 
+## Exemplos de uso
 
+*O bom uso de uma ferramenta que automatiza o processo de analise de vulnerabilidade seria o saber configurar da forma correta para que mesma não seja barrada por alguma ferrametna de proteção, alem de alternar algumas tarefas entre automatico e manual.*
+
+## Trabalhando com o Nessus
+
+Download:
+
+https://www.tenable.com/downloads/nessus?loginAttempted=true
+
+Apos fazer o download faça a checagem do ckesum para ver se é compativel com a que esta no site e a que você baixou.
+
+Exemplo:
+
+`sha256sum nome_da_aplicação`
 
 
 
