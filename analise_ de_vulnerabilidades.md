@@ -34,5 +34,17 @@ https://www.rapid7.com/
 https://packetstormsecurity.com/files/tags/exploit/
 
 
+## Pesquisa manual por vulnerabilidades
+
+*Utilizando os sites acima faça a busca por vulnerabilidades de acordo com a aplicação ou sistema que vocẽ identificou, caso nao saiba a versão da aplicação você pode se basear pela versão do sistema operacional o ano e tentar filtrar qual a versão da aplicação estva disponível na quele ano.*
+
+Google Dork
+
+`site:exploit-db.com "webmin"`
+
+
+
+
+
 
 
