@@ -115,6 +115,9 @@ https://www.pcisecuritystandards.org/documents/Penetration_Testing_Guidance_Marc
 
 ## Exemplo: Compliance PCI-DSS
 
+## Falsos Negativos
+
+
 
 
 
