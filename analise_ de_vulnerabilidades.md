@@ -45,6 +45,38 @@ Google Dork
 
 ## Scanners de Vulnerabilidades
 
+*São ferramentas capazes de automatizar o processo de descoberta de vulnerabilidades.*
+
+- Nessus
+- Qualys
+- OpenVAS
+
+Como funciona?
+
+*Um bom scanner de vulnerabilidades via tentar automatizar o processo da seguinte forma* 
+
+1. Tenta identificar se o host está ativo
+2. Realiza um portscan
+3. Tenta identificar o sistema operacional
+4. Tenta identificar os serviços encontrados
+5. Faz a verificação de vulnerabilidades de acordo com sua base de vulnerabilidades
+
+Vantagens e Desvantagens
+
+VANTAGENS
+
+- Analisa uma grande quantidade de vulnerabilidades conhecidasa em pouco tempo em diversos hosts simultaneamente
+- Ajuda a realizar gerenciamento de patches
+- Pode ser usado para ajudar em processos de auditoria e compliances
+
+DESVANTAGENS
+
+- Pode gerar vários falsos positivos (informar que existe uma vulnerabilidade onde não existe)
+- Gera falsos negativos (não detecta uma vulnerabilidade existente)
+- Cosome poder computacional
+- Gera bastante ruído na rede/host
+
+
 
 
 
