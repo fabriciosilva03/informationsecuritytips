@@ -101,6 +101,19 @@ Exemplo:
 
 ## Realizando testes de força bruta
 
+## Scan avançado (Like a pro)
+
+## Compliance PCI-DSS
+
+Referência:
+
+https://www.pcisecuritystandards.org/document_library
+
+https://www.pcisecuritystandards.org/document_library?category=pcidss&subcategory=pcidss_supporting#results
+
+https://www.pcisecuritystandards.org/documents/Penetration_Testing_Guidance_March_2015.pdf
+
+
 
 
 
