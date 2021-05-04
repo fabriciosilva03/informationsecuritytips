@@ -33,6 +33,7 @@ https://www.rapid7.com/
 
 https://packetstormsecurity.com/files/tags/exploit/
 
+`searchsploit nome_da_aplicação_ou_SO`
 
 ## Pesquisa manual por vulnerabilidades
 
@@ -41,6 +42,8 @@ https://packetstormsecurity.com/files/tags/exploit/
 Google Dork
 
 `site:exploit-db.com "webmin"`
+
+## Scanners de Vulnerabilidades
 
 
 
