@@ -1,4 +1,4 @@
-##
+## MENU
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumera%C3%A7%C3%A3o-enumeration">Enumeração - Enuumeration </a>
 
@@ -17,6 +17,42 @@
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#introdu%C3%A7%C3%A3o-netbiossmb">Introdução Netbios e SMB  </a>
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-netbiossmb-no-windows"> Enumerando-netbios smb no windows </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#trick-brute-force-via-prompt-do-windows">Trick brute force via prompt do windows</a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-netbiossmb-via-linux">Enumerando netbiossmb via linux</a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-com-rpc">Enumerando com RPC </a>
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#automatizando-a-enumera%C3%A7%C3%A3o-netbiossmb"> Automatizando a enumeração Netbios SMB </a> 
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#scripts-para-enumera%C3%A7%C3%A3o-netbiossmb">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-pop3">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-smtp">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#criando-um-script-para-enumerar-smtp">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#criando-um-script-para-brute-force-smtp">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-dispositivos-de-rede">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#protocolos-seguros-x-inseguros">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-ssh">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#autentica%C3%A7%C3%A3o-com-chave-p%C3%BAblica">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-network-file-system">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-snmp">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#alterando-informa%C3%A7%C3%B5es-via-snmp">
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md#enumerando-mysql">
+
+
 
 ## 
 
