@@ -93,6 +93,14 @@ Exemplo:
 `sha256sum nome_da_aplicação`
 
 
+## Análise de um scan básico
+
+## Análise em aplicações web
+
+## Realizando um Patch Assessment
+
+## Realizando testes de força bruta
+
 
 
 
