@@ -82,9 +82,7 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md"> Enumeração (Enumeration) </a>
 
 
-:monocle_face:	 **Análise de Vulnerabilidade**
-
-<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/analise_%20de_vulnerabilidades.md"> Análise de Vulnerabilidade </a>
+:monocle_face:	 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/analise_%20de_vulnerabilidades.md"> Análise de Vulnerabilidade </a>
 
 
 
