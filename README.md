@@ -46,16 +46,9 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 ##
 
 
-:man_technologist: **Dominando o Terminal do Linux:**
-
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dominandooterminaldolinux.md"> Dominando o Terminal do Linux </a>
 
-
-:knife: **Swiss Army Knife | Canivete Suiço:**
-
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/swissarmyknife.md"> Swiss Army Knife </a>
-
-:mag: **Information Gathering:**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-business.md"> Information Gathering Business</a>
 
@@ -63,26 +56,17 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/information-gathering-web.md">  Information Gathering - WEB </a>
 
-:telescope: **Scanning**
-
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/scanning.md">  Scanning </a>
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/metodologiascanning.md">  Metodologia Scanning </a>
 
-:unlock: **Burlando Mecanismos de Defesa:**
-
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/burlandomecanismosdedefesa.md">Burlando Mecanismos de Defesa</a>
-
-:white_square_button: **Trabalhando com Scapy**
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/trabalhandocomscapy.md"> Trabalhando com Scapy </a>
 
-:1234: **Enumeração (Enumeration)**
-
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/enumera%C3%A7%C3%A3o_enumeration.md"> Enumeração (Enumeration) </a>
 
-
-:monocle_face:	 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/analise_%20de_vulnerabilidades.md"> Análise de Vulnerabilidade </a>
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/analise_%20de_vulnerabilidades.md"> Análise de Vulnerabilidade </a>
 
 
 
