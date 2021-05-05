@@ -113,6 +113,36 @@ Listando informações
 
 `hosts`
 
+## Identificando Vulnerabilidades
+
+`vulns`
+
+`hosts -i "Samba x.x.x" 192.168.0.1`
+
+`search type:exploit samba`
+
+*Obs: observe a coluna rank e verifique os exploits que são excellent, pois estes funcionam de forma perfeita.*
+
+`search type:exploit fullname: "Samba 3.0.20" `
+
+`search type:auxiliary smb`
+
+`use auxiliary/scanner/smb/smb_ms17_010`
+
+`services -p 445`
+
+`services -p 445 --rhosts`
+
+`show options`
+
+`run`
+
+
+
+
+
+
+
 
 
 
