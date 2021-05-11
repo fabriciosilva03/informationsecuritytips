@@ -298,6 +298,8 @@ msf5>  `sessions -i 2`
 
 ## Analisando exploits
 
+msf5>  `exploit(unix/ftp/vsftpd_234_backdoor)`
+
 
 
 
