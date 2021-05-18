@@ -83,6 +83,34 @@ Referência:
 https://hashes.com/en/decrypt/hash
 https://md5decrypt.net/en/
 
+## Ataques a hashes: Ferramentas
+
+Ferramenta 01
+
+`john`
+
+Exemplo 01
+
+`john arquivo_com_hash`
+
+Exemplo 02
+
+`john arquivo_com_hash --format=Raw-MD5 --wordlist=/opt/aquivo.txt`
+
+Ferramenta 02
+
+`hashcat`
+
+Exemplo 01
+
+`hascat -m 100 arquivo_com_hash /usr/share/john/password.lst --force`
+
+
+
+
+
+
+
 
 
 
