@@ -107,6 +107,22 @@ Exemplo 01
 
 `hascat -m 100 arquivo_com_hash /usr/share/john/password.lst --force`
 
+## Senhas em sistemas Linux
+
+Lista de usuario linux
+
+`cat /etc/passwd`
+
+Lista de senhas linux
+
+`cat /etc/shadow`
+
+man crypt (Metodo utilizado no linux para encripitar senha).
+
+**Referência:**
+
+https://man7.org/linux/man-pages/man3/crypt.3.html
+
 
 
 
