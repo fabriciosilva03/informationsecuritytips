@@ -34,15 +34,29 @@ Reconstruindo o arquivo
 
 `cat saida | base64 -d > wall.png`
 
-Hashes com Python
+## Hashes com Python
 
 Exemplo via terminal:
 
+```
 python
 
 import haslib
 texto = "brasil"
 hashlib.md5(texto).hexdigest()
+```
+
+
+## Base64 com Python
+
+```
+python
+
+import base64
+texto = "brasil"
+base64.b64encode(texto)
+```
+
 
 
 
