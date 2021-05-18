@@ -119,9 +119,34 @@ Lista de senhas linux
 
 man crypt (Metodo utilizado no linux para encripitar senha).
 
+gerando um senha com salt
+
+`openssl passwd -6 salt texto_salt senha_inserida`
+
 **Referência:**
 
 https://man7.org/linux/man-pages/man3/crypt.3.html
+
+
+## Descobrindo Senhas no Linux
+
+Etapa 1
+
+Copiar os dados do passwd para um arquivo e copiar os dados do shadow para outro arquivo
+
+Etapa 2
+
+`unshadow passwd shadow > hashes`
+
+Etapa 3 
+
+`john hashes`
+
+
+## Quebra de senhas com Loncrack
+
+https://github.com/ricardolongatto/loncrack
+
 
 
 
