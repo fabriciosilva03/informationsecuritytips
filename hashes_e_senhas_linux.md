@@ -80,7 +80,9 @@ Ataque de forma manual
 `greep "hash_a_ser_procurada" rainbow_tables`
 
 Referência:
+
 https://hashes.com/en/decrypt/hash
+
 https://md5decrypt.net/en/
 
 ## Ataques a hashes: Ferramentas
