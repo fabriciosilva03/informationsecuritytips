@@ -57,6 +57,35 @@ texto = "brasil"
 base64.b64encode(texto)
 ```
 
+## Identificando Hashes
+
+Exemplo 01
+
+`hashid .......`
+
+Exemplo 02
+
+`hash-identifier`
+
+*Obs: valide em pelo menos dois programas qual o tipo de hash esta sendo utilizado, para valiadar sua identificação.*
+
+## Estudo técnico: Atacando Hashes
+
+*Obs: primeiro identifique qual tipo de hash esta sendo utilizado e depois efetue o ataque.*
+
+Ataque de forma manual
+
+`for i in $(cat wordlist.txt);do echo -n $i " " ;echo -n $i | sha1sum;done > rainbow_tables`
+
+`greep "hash_a_ser_procurada" rainbow_tables`
+
+Referência:
+https://hashes.com/en/decrypt/hash
+https://md5decrypt.net/en/
+
+
+
+
 
 
 
