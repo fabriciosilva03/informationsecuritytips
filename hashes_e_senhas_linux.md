@@ -121,7 +121,7 @@ man crypt (Metodo utilizado no linux para encripitar senha).
 
 gerando um senha com salt
 
-`openssl passwd -6 salt texto_salt senha_inserida`
+`openssl passwd -6 -salt texto_salt senha_inserida`
 
 **Referência:**
 
