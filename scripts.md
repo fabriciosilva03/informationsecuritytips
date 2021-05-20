@@ -321,3 +321,60 @@ cmd = tcp.recv(2048)
 print (cmd)
 ```
 
+Quebrar senhas que possuem salt
+
+```
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+
+# Aplicação desenvolvida pra encontrar senhas de hashs que possuem salt.
+
+import sys
+import crypt
+
+print ""
+print "_____________RESOLVE HASH________________"
+print ""
+
+#Para iniciar o usso da aplicação vocẽ deve indicar uma wordlist no parametro inicial.
+#Exemplo: python resolvehash.py wordlist.txt
+
+wordlist = sys.argv[1]
+
+with open(wordlist, "r") as f:
+	n_linhas = len(f.readlines())
+	print "Numero de palavras da sua wordlist: ", n_linhas
+	print ""
+	print "Obs: Copie item por item da hash encontra e preencha os campos solicitados de forma correta."
+	print "Insira somente o que estiver entre os $ : "
+	print "Exemplo da estrutura de uma hash: $ID$SALT$SENHA"
+	print ""
+
+id = raw_input("ID: ")
+salt = raw_input("SALT: ")
+senha = raw_input("SENHA: ")
+
+hash = ('$'+id+'$'+salt+'$'+senha)
+
+i = 0
+n = n_linhas
+
+print "_________________________________________"
+print ""
+
+while i < n:
+
+	words = [w.strip() for w in open(wordlist, "rb").readlines()]
+	for line in words:
+		senha2 = line
+
+		hashdb = crypt.crypt(senha2, '$'+id+'$'+salt)
+		if hash == hashdb :
+			print "\033[1;92mSENHA ENCONTRADA: ", senha2
+			i = n
+			break;
+		else :
+			print "Testando...", senha2
+			i = i + 1			
+```
