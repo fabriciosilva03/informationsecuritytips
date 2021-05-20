@@ -26,17 +26,17 @@ Obs: Os arquivos acima são protegidos quando estão em execução, ou seja voc�
 
 **LOCALMENTE**
 
-- Acesso fisico ao computador? Realizar boot com live cd e capturar os arquivos.
+Acesso fisico ao computador? Realizar boot com live cd e capturar os arquivos.
 
 **REMOTAMENTE**
 
-- C:\Windows\repair (apanesa sistema antigos como XP/2003)
+C:\Windows\repair (apanesa sistema antigos como XP/2003)
 
-- Salvar direo do registro do windows (Desde versões antigas a versões recentes)
+Salvar direo do registro do windows (Desde versões antigas a versões recentes)
 
 Ex: reg save hklm\sam
 
-- Cópia somnbra do volume (Versões mais recentes)
+Cópia somnbra do volume (Versões mais recentes)
 
 Ex: vssadmin
 
