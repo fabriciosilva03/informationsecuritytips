@@ -55,5 +55,13 @@ Pass The Hash - Técnica para utilizar um hash sem precisar quebrá-lo
 
 Captura de hashes na rede
 
+**Exemplo de Hashes no Windows**
 
+**Usuário   ID    LM(LAN MANAGER)   -   NTLM(NT LAN MANAGER)**
+
+Administrador:500:aa.......................ee:ae..........................:::
+
+rafaela:1005:aa...........................ee == vazio (significa que não está usando LM então se torna mais fácil de quebrar.)
+
+Obs: ID = 500 - Corresponde a uma conta de administrador.
 
