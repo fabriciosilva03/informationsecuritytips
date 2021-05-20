@@ -41,6 +41,19 @@ Cópia somnbra do volume (Versões mais recentes)
 Ex: vssadmin
 
 
+**ATAQUE**
+
+Obter os arquvios e usá-los para obter os hashes
+
+Tentar descobrir os hashes obtidos
+
+**OUTRAS TÈCNICAS**
+
+Senhas em memória/cache - Utilizar técnicas para obter senhas em cache ou na memória do Sistema.
+
+Pass The Hash - Técnica para utilizar um hash sem precisar quebrá-lo
+
+Captura de hashes na rede
 
 
 
