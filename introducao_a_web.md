@@ -6,17 +6,27 @@ Referência: https://www.iana.org/domains/root/servers
 
 **Tools && Comands**
 
-`dnsutils` - Ferramenta que acopla diversas ferramentas relacionadas a DNS
+Ferramenta que acopla diversas ferramentas relacionadas a DNS
 
-`dig` - Listando todos os root servers
+`dnsutils`
 
-`dig NS br` - Listando servers que são responsaveis por DNS relacionados ao .br.
+Listando todos os root servers
 
-`dig NS @a.root-server.net br` - utilizando root server para consultar sobre os responsaveis pelo .br.
+`dig`
+ 
+Listando servers que são responsaveis por DNS relacionados ao .br.
+ 
+`dig NS br`
 
-`dig NS @a.dns.br site.com.br` - consultando sobre os servers responsaveis por determinado dominio.
+Utilizando root server para consultar sobre os responsaveis pelo .br.
 
-Exemplo com globo.com
+`dig NS @a.root-server.net br`
+
+Consultando sobre os servers responsaveis por determinado dominio.
+
+`dig NS @a.dns.br site.com.br`
+
+- Exemplo com globo.com
 
 Primeiro indenfique os server responsaveis .br
 
