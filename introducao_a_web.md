@@ -44,9 +44,28 @@ Identificando sua resolução de DNS local
 
 `cat /etc/resolv.conf`
 
+## Entradas DNS (CNAME, A, AAAA, MX, SOA)
 
+@  A IP
 
+A - IPv4
 
+AAAA - IPv6
 
+CNAME - Dominio
 
+TXT - Anotações e Validações
 
+MX - aponta os servidores de email do dominio.
+
+SOA - Validações do dominio
+
+NS - Servidores autoritativos
+
+Comando para verificar o TXT registrado sobre algum dominio.
+
+`ig TXT site.com`
+
+Listando servidores de email
+
+`dig MX site.com`
