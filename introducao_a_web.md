@@ -69,3 +69,17 @@ Comando para verificar o TXT registrado sobre algum dominio.
 Listando servidores de email
 
 `dig MX site.com`
+
+
+
+## Métodos HTTP
+
+- Get: Ler dados do servidor
+- Post: enviar dados para o servidor
+- Put: Enviar dados para o servidor (criar/atualizar)
+- Delete: Deleta dados do servidor
+- Patch: Atualiza dados do servidor.
+
+
+
+
