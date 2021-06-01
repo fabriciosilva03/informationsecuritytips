@@ -14,7 +14,6 @@
 
 - usr/share/wordlists
 - usr/share/seclists
--
 
 Comando utilizado para buscar um termo dentro de varias wordlists
 
@@ -29,3 +28,14 @@ Wordlist Longato
 https://github.com/ricardolongatto/loncrack/blob/master/wl.txt
 
 
+Gerando mutação em wordlist
+
+- Primeiro crie um lista com possiveis senhas utilizadas pelo alvo
+- Depois execute o comando abaixo para fazer a mudação usando o John
+- `john --wordlist=wl.txt --rules --stdout > wl_mutacao.txt`
+
+Caso queira acresentar algum tipo de modificação para insereir na mutação, você pode alterar algumas configurações no john
+
+- Acesse: /etc/john/john.conf
+- Localize: List Rules Wordlist
+- 
