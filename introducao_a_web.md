@@ -124,3 +124,33 @@ https://github.com/SpiderLabs/ModSecurity
 
 
 
+
+## Cookies
+
+- Cookie de sessão
+- Cookie persistente
+- Cookies de terceiros
+
+**Propriedades **
+
+- name
+- value
+- path
+- domain
+- expires
+- http-only
+- secure
+- samesite
+
+## API (REST, SOAP, Graphql
+
+**Tipos de API Relevantes**
+
+- REST
+- GRAPHQL
+- SOAP
+
+
+
+
+
