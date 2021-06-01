@@ -76,7 +76,11 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/pentest_interno_do_zero_a_%20domain_admin.md"> Pentest Interno: Do zero a Domain Admin </a>
 
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/brute_force_ataques_em%20_senhas.md">Brute Force: Ataques em senhas</a>
+
+
 ##
+
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/introducao_a_web.md">Introducao a Web</a> 
 
