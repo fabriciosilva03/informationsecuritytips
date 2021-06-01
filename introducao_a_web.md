@@ -80,6 +80,47 @@ Listando servidores de email
 - Delete: Deleta dados do servidor
 - Patch: Atualiza dados do servidor.
 
+## Servidores Web (Apache, Nginx, IIS)
+
+**NGNIX**
+
+instalando interpretador PHP 
+
+`sudo apt-get install php-fpm`
+
+Inicializando PHP
+
+`sudo systemctl start php-fpm`
+
+Configurando PHP no ngix
+
+Acesse o arquivo default
+
+`nano /etc/nginx/sites-enable/default`
+
+e remova algumas na região 
+
+location ~ \.php$ {
+
+Comando para acompanhar os registros de log do nginx
+
+`sudo tail -f /var/log/nginx/access.log`
+
+**APACHE2**
+
+Instalando PHP e Apache2 
+
+`sudo apt-get install php apache2`
+
+Comando para acompanhar os registros de log do nginx
+
+`sudo tail -f /var/log/apache2/access.log`
+
+Modulo de securança para evitar ataques em servidores apache
+
+**ModSecurity **
+
+https://github.com/SpiderLabs/ModSecurity
 
 
 
