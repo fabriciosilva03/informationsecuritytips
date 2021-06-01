@@ -80,6 +80,6 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/introducao_a_web.md">Introducao a Web</a> 
 
-
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/recon_e_fuzzing.md">Recon e Fuzzing</a>
 
 
