@@ -1,6 +1,6 @@
 ## Recon e Fuzzing
 
-Subdomain Discovery
+## Subdomain Discovery
 
 - Histórico
 - Brute Force
@@ -36,8 +36,17 @@ Brute force simples de subdomain
 
 `for subdominio in $(cat sub.txt); host "$subdominio.site.com" | grep -v 'NXDOMAIN';`
 
-**ProjectDiscovery - Security Through Intelligent Automation **
+**ProjectDiscovery - Security Through Intelligent Automation**
 
 https://github.com/projectdiscovery
+
+Subfinder - Uma excelente ferramenta.
+
+Scan de subdomain online
+
+https://chaos.projectdiscovery.io/#/
+
+
+
 
 
