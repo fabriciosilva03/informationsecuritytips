@@ -68,6 +68,7 @@ https://chaos.projectdiscovery.io/#/
 - github.com/devanshbatham/ParamSpider
 - github.com/tomnomnom/gf
 - github.com/s0md3v/Parth
+- github.com/tomnomnom/hacks/tree/master/kxss
 
 **Content Discovery**
 
@@ -81,7 +82,7 @@ Ex:
 
 `sudo mv httpx /bin/`
 
-Caso o binario gau esteja dando problema ao executar apos ser exportado para /bin siga os passos abaixo.
+**Caso o binario gau esteja dando problema ao executar apos ser exportado para /bin siga os passos abaixo.**
 
 Acesse o .zshrc
 
@@ -90,6 +91,49 @@ Acesse o .zshrc
 E coloque # ao lado do pluguin do git
 
 #plugins=(git)
+
+
+1. Enumernado
+
+subfinder -d site.com -o sub.txt
+
+2. Possui aplicações web?
+
+cat sub.txt | httpx
+
+cat sub.txt | httpx -silent
+
+cat sub.txt | httpx -status-code
+
+cat sub.txt | httpx -status-code -path /admin/
+
+cat sub.txt | httpx -status-code -ports 80,8080,443
+
+3. Identificando subdomains
+
+cat sub.txt | httpx -silent | gau
+
+ou
+
+subfinder -d site.com -silent | httpx -silent | gau
+
+*Obs: -silent é um comando usado para não exibir um banner da aplicação.*
+
+
+
+
+Parameter Discovery
+
+- github.com/devanshbatham/ParamSpider
+- 
+
+
+
+
+
+
+
+
 
 
 
