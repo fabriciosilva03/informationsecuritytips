@@ -36,6 +36,8 @@ Brute force simples de subdomain
 
 `for subdominio in $(cat sub.txt); host "$subdominio.site.com" | grep -v 'NXDOMAIN';`
 
+**ProjectDiscovery - Security Through Intelligent Automation **
 
+https://github.com/projectdiscovery
 
 
