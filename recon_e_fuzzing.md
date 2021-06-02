@@ -122,10 +122,84 @@ subfinder -d site.com -silent | httpx -silent | gau
 
 
 
-Parameter Discovery
+## Parameter Discovery
+
+Buscando parametros de dominios
 
 - github.com/devanshbatham/ParamSpider
-- 
+
+Verificando se os parametros são refletidos
+
+- github.com/tomnomnom/hacks/tree/master/kxss
+
+
+
+
+## Content Discovery
+
+Capturando telas e tecnologias utiliadas nos sites listados.
+
+- github.com/michenriksen/aquatone
+
+Exemplo:
+
+subfinder -d site.com -silent | ./aquatone
+
+
+## Fuzzing de pasta e arquivos (wfuzz, fuff)
+
+**Automation**
+
+- github.com/yogeshojha/rengine
+- github.com/edoardottt/scilla
+- github.com/kpcyrd/sn0int
+
+
+**WFUZZ**
+
+https://github.com/xmendez/wfuzz
+
+Pesquisa de arquivos e diretorios
+
+`wfuzz -c -z file,wordlist.txt --hc 404 http://192.168.0.1/FUZZ`
+
+Pesquisa de arquivos e diretorios mais rapido
+
+`wfuzz -t 100 -c -z file,wordlist.txt --hc 404 http://192.168.0.1/FUZZ`
+
+
+
+
+## Fuzzing de parametros (wfuzz, fuff)
+
+Wordlist: 
+
+- SecList --> burp-parameter-names.txt
+- SecList --> raft-large-words-lowercase.txt
+
+Exemplo: 
+
+`wfuzz -c -z file,burp-parameter-names.txt --hc 404 http://192.168.0.1/index.php?FUZZ=teste`
+
+Exemplo 02: Filtrando pelo numero de caracteres
+
+`wfuzz -c -z file,burp-parameter-names.txt --hc 404 --hh 3034 http://192.168.0.1/index.php?FUZZ=teste`
+
+Exemplo 03: Fazendo Fuzz no paramentro encontrado
+
+`wfuzz -c -z file,raft-large-words-lowercase.txt  --hc 404 http://192.168.0.1/index.php?search=FUZZ`
+
+Exemplo 04: Filtrando pelo numero de linhas
+
+`wfuzz -c -z file,raft-large-words-lowercase.txt --hc 404  --hl 45 http://192.168.0.1/index.php?search=FUZZ`
+
+
+
+
+## PortScan
+
+
+
 
 
 
