@@ -198,6 +198,13 @@ Exemplo 04: Filtrando pelo numero de linhas
 
 ## PortScan
 
+**NMAP**
+
+`nmap -Pn -sV 192.168.0.1 -vv`
+
+`nmap -Pn -p- -sV 192.168.0.1 -vv`
+
+`nmap -Pn -p- -sV -A 192.168.0.1 -vv`
 
 
 
