@@ -14,6 +14,8 @@ Comands:
 
 `wfuzz -c -z file,common.txt --hc 404 --hh 264 http://192.168.0.1/FUZZ`
 
+`python3 git_dumper.py http://192.168.0.1/ info_git`
+
 `git status`
 
 `git log`
