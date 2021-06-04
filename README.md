@@ -88,4 +88,4 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/analise_de_vulnerabilidade_em_aplicacoes_web.md">Análise de vulnerabilidade em aplicações WEB</a>
 
-
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/exploracao_basica_web.md">Exploração básica (Web)</a>
