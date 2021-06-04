@@ -15,3 +15,7 @@ https://fgodoy.me/2016/05/jwt-hole/
 **Repositórios OWASP**
 
 https://github.com/OWASP
+
+Code Quality and Code Security
+
+https://www.sonarqube.org/
