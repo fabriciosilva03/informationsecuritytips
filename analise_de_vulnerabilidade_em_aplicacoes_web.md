@@ -12,3 +12,6 @@ https://owasp.org/www-project-top-ten/2017/
 
 https://fgodoy.me/2016/05/jwt-hole/
 
+**Repositórios OWASP**
+
+https://github.com/OWASP
