@@ -78,6 +78,11 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/brute_force_ataques_em%20_senhas.md">Brute Force: Ataques em senhas</a>
 
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dev_exploitation_assembly_para_pentesters_windows.md">Dev E Exploitation Assembly para Pentesters Windows</a> 
+
+<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dev_exploitation_assembly_para_pentesters_linux.md">Dev Exploitation: Assembly para Pentesters - Linux </a>
+
+
 
 ##
 
@@ -90,5 +95,5 @@ Este repositório contem dicas de segurança da informação, que foram coletada
 
 <a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/exploracao_basica_web.md">Exploração básica (Web)</a>
 
-<a href="https://github.com/fabriciosilva03/informationsecuritytips/blob/main/dev_exploitation_assembly_para_pentesters_windows.md">Dev E Exploitation Assembly para Pentesters Windows</a> 
+
 
