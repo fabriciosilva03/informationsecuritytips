@@ -13,8 +13,8 @@ nmap --script=vuln -v x.x.x.x -oN nmap3
 nmap -A -T4 -n -top-ports=1000 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every=5s -oN nmap0 x.x.x.x
 
 -NMAP SCAN HOSTS
-nmap -v -T4 -sP x.x.x.x/24
-nmap -v -T4 -sn x.x.x.x/24
+nmap -v -T4 -sP x.x.x.x/24 > scanhosts.txt
+nmap -v -T4 -sn x.x.x.x/24 > scanhosts.txt
 
 -NMAP FILTRANDO DADOS 
 *Filtro por porta:
@@ -23,6 +23,10 @@ sed -i 's/tcp//' nmapx | sed -i 's/\///' nmapx
 cat nampx
 
 *Filtro por porta ip:
+cat scanhosts | grep -v down | grep 192 | cut -d ' ' -f5 > scanhosts2.txt
+
+-NMAP SCAN POR LISTA
+nmap --top-ports 20 -v -iL scanhosts.txt
 
 
 --GOBUSTER:
