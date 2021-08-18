@@ -1,5 +1,4 @@
 --WhatWeb
-
 whatweb site.com.br
 
 --WAF
