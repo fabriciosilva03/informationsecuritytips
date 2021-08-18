@@ -12,13 +12,17 @@ nmap --script=vuln -v x.x.x.x -oN nmap3
 -NMAP TUNADO:
 nmap -A -T4 -n -top-ports=1000 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every=5s -oN nmap0 x.x.x.x
 
--NMAP FILTRANDO DADOS
+-NMAP SCAN HOSTS
+nmap -v -T4 -sP x.x.x.x/24
+nmap -v -T4 -sn x.x.x.x/24
 
+-NMAP FILTRANDO DADOS 
 *Filtro por porta:
 cat nmap0 | cut -d ' ' -f1 | grep tcp > nmapx
 sed -i 's/tcp//' nmapx | sed -i 's/\///' nmapx
 cat nampx
 
+*Filtro por porta ip:
 
 
 --GOBUSTER:
