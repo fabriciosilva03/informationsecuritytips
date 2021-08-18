@@ -9,6 +9,18 @@ nmap -p- -v x.x.x.x -oN nmap1
 nmap -sV -sC -p x,x -v x.x.x.x -oN nmap2
 nmap --script=vuln -v x.x.x.x -oN nmap3
 
+-NMAP TUNADO:
+nmap -A -T4 -n -top-ports=1000 --max-rtt-timeout=500ms --initial-rtt-timeout=200ms --min-rtt-timeout=200ms --open --stats-every=5s -oN nmap0 x.x.x.x
+
+-NMAP FILTRANDO DADOS
+
+*Filtro por porta:
+cat nmap0 | cut -d ' ' -f1 | grep tcp > nmapx
+sed -i 's/tcp//' nmapx | sed -i 's/\///' nmapx
+cat nampx
+
+
+
 --GOBUSTER:
 gobuster dir -u testphp.vulnweb.com -w /usr/share/dirb/wordlists/big.txt -a Firefox 5.0 -o gobuster1
 
