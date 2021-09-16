@@ -82,13 +82,16 @@ find / -user nome_usuario -type f 2>/dev/null
 --Tool para converter chave id_rsa em hash, para posteriormente quebrar a hashe utilizando John.
 ssh2john.py
 
-
 --ENUMERAÇÃO
 enum4linux -A 192.168.0.1
 
-
 --ENCODE & DECODE
 https://gchq.github.io/CyberChef/
+
+--WEB SERVER FREE
+https://interact.projectdiscovery.io/#/
+http://pingb.in/
+https://webhook.site/
 
 
 
