@@ -155,7 +155,8 @@ LINUX
 https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/linpeas.sh
 https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
 
-
+-- Sugestão de Exploit
+https://github.com/mzet-/linux-exploit-suggester/blob/master/linux-exploit-suggester.sh
 
 
 
