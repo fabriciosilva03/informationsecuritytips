@@ -96,6 +96,7 @@ https://webhook.site/
 -- Spawning a TTY Shell -  Shell Spawning
 
 python -c 'import pty; pty.spawn("/bin/sh")'
+python -c 'import pty; pty.spawn("/bin/bash")'
 echo os.system('/bin/bash')
 /bin/sh -i
 perl —e 'exec "/bin/sh";'
