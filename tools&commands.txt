@@ -172,3 +172,7 @@ hydra -l user_admin -P /usr/share/wordlists/rockyou.txt  192.168.0.1 http-post-f
 120&User=^USER^&Password=^PASS^:F=Login failed! Your user name or password was entered incorrectly." -I
 
 
+-- ACESSO VIA RDP
+xfreerdp /v:ip_do_computador /u:nome_de_usuario
+xfreerdp /v:nome_ou_ip_do_computador /d:dominio /u:nome_de_usuario
+
